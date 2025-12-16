@@ -111,6 +111,25 @@ body {
   }
 }
 
+/* 桌面端布局 - 居中显示 */
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  main, footer {
+    max-width: var(--container-max-width);
+  }
+}
+
 /* 通用卡片样式 */
 .card {
   background-color: var(--background-color);
