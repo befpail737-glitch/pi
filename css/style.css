@@ -536,6 +536,55 @@ header nav ul li a.active::before {
     border-radius: 2px;
 }
 
+/* Breadcrumb Navigation */
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "›";
+    padding: 0 0.5rem;
+    color: var(--neutral-medium);
+    font-size: 1.2em;
+}
+
+.breadcrumb-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Responsive breadcrumb */
+@media (max-width: 768px) {
+    .breadcrumb {
+        font-size: 0.9rem;
+    }
+
+    .breadcrumb-item + .breadcrumb-item::before {
+        padding: 0 0.3rem;
+    }
+}
+
 /* Modern Hero Banner Component */
 .hero-banner {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
