@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 产品展示页面，展示我们的各类产品和解决方案">
+    <title>产品展示 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem" aria-current="page">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <nav class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a>
+                        <span>产品</span>
+                    </nav>
+                    <h1 id="page-title">我们的产品</h1>
+                    <p>探索我们为不同行业设计的专业解决方案</p>
+                </div>
+            </section>
+
+            <section class="product-filters" aria-labelledby="filter-title">
+                <div class="container">
+                    <h2 id="filter-title" class="sr-only">产品筛选</h2>
+                    <div class="filters-bar">
+                        <div class="filter-group">
+                            <label for="category-filter">分类</label>
+                            <select id="category-filter" class="filter-select">
+                                <option value="all">全部分类</option>
+                                <option value="design">设计工具</option>
+                                <option value="development">开发工具</option>
+                                <option value="analytics">分析工具</option>
+                            </select>
+                        </div>
+                        
+                        <div class="filter-group">
+                            <label for="sort-filter">排序</label>
+                            <select id="sort-filter" class="filter-select">
+                                <option value="featured">推荐</option>
+                                <option value="newest">最新</option>
+                                <option value="popular">热门</option>
+                                <option value="price-low">价格: 低到高</option>
+                                <option value="price-high">价格: 高到低</option>
+                            </select>
+                        </div>
+                        
+                        <div class="search-box">
+                            <input type="text" id="product-search" placeholder="搜索产品..." aria-label="搜索产品">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-grid" aria-labelledby="products-title">
+                <div class="container">
+                    <h2 id="products-title" class="sr-only">产品列表</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="products-container">
+                        <!-- 产品 1 -->
+                        <article class="product-card card" role="article">
+                            <div class="product-image" aria-label="产品图片">
+                                <img
+                                    src="https://placehold.co/400x300/4361ee/FFFFFF?text=设计系统管理器"
+                                    alt="设计系统管理器界面截图"
+                                    width="400"
+                                    height="300"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <span class="product-category">设计工具</span>
+                                <h3>设计系统管理器</h3>
+                                <p>一体化设计系统管理平台，帮助团队统一UI组件和设计规范。</p>
+                                <div class="product-meta">
+                                    <span class="price">¥2,999</span>
+                                    <div class="rating" aria-label="评分 4.8 星">
+                                        <span>★★★★★</span>
+                                        <span class="rating-text">4.8</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="/product-1.html" class="button small">查看详情</a>
+                                    <button class="button secondary small" aria-label="添加到收藏">❤</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 产品 2 -->
+                        <article class="product-card card" role="article">
+                            <div class="product-image" aria-label="产品图片">
+                                <img
+                                    src="https://placehold.co/400x300/3f37c9/FFFFFF?text=前端开发框架"
+                                    alt="前端开发框架功能展示"
+                                    width="400"
+                                    height="300"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <span class="product-category">开发工具</span>
+                                <h3>前端开发框架</h3>
+                                <p>高性能响应式前端开发框架，支持现代Web标准和可访问性。</p>
+                                <div class="product-meta">
+                                    <span class="price">¥3,499</span>
+                                    <div class="rating" aria-label="评分 4.9 星">
+                                        <span>★★★★★</span>
+                                        <span class="rating-text">4.9</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="/product-2.html" class="button small">查看详情</a>
+                                    <button class="button secondary small" aria-label="添加到收藏">❤</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 产品 3 -->
+                        <article class="product-card card" role="article">
+                            <div class="product-image" aria-label="产品图片">
+                                <img
+                                    src="https://placehold.co/400x300/7209b7/FFFFFF?text=数据分析平台"
+                                    alt="数据分析平台仪表板"
+                                    width="400"
+                                    height="300"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <span class="product-category">分析工具</span>
+                                <h3>数据分析平台</h3>
+                                <p>全面的数据分析解决方案，支持实时数据可视化和报告生成。</p>
+                                <div class="product-meta">
+                                    <span class="price">¥4,999</span>
+                                    <div class="rating" aria-label="评分 4.7 星">
+                                        <span>★★★★★</span>
+                                        <span class="rating-text">4.7</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="/product-3.html" class="button small">查看详情</a>
+                                    <button class="button secondary small" aria-label="添加到收藏">❤</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 产品 4 -->
+                        <article class="product-card card" role="article">
+                            <div class="product-image" aria-label="产品图片">
+                                <img
+                                    src="https://placehold.co/400x300/4cc9f0/000000?text=原型设计工具"
+                                    alt="原型设计工具界面"
+                                    width="400"
+                                    height="300"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <span class="product-category">设计工具</span>
+                                <h3>原型设计工具</h3>
+                                <p>强大的原型设计工具，支持交互式原型制作和用户测试。</p>
+                                <div class="product-meta">
+                                    <span class="price">¥1,899</span>
+                                    <div class="rating" aria-label="评分 4.6 星">
+                                        <span>★★★★★</span>
+                                        <span class="rating-text">4.6</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="/product-4.html" class="button small">查看详情</a>
+                                    <button class="button secondary small" aria-label="添加到收藏">❤</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 产品 5 -->
+                        <article class="product-card card" role="article">
+                            <div class="product-image" aria-label="产品图片">
+                                <img
+                                    src="https://placehold.co/400x300/e9ecef/495057?text=API管理平台"
+                                    alt="API管理平台后台"
+                                    width="400"
+                                    height="300"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <span class="product-category">开发工具</span>
+                                <h3>API管理平台</h3>
+                                <p>完整的API生命周期管理平台，包括开发、测试、部署和监控。</p>
+                                <div class="product-meta">
+                                    <span class="price">¥5,499</span>
+                                    <div class="rating" aria-label="评分 4.9 星">
+                                        <span>★★★★★</span>
+                                        <span class="rating-text">4.9</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="/product-5.html" class="button small">查看详情</a>
+                                    <button class="button secondary small" aria-label="添加到收藏">❤</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- 产品 6 -->
+                        <article class="product-card card" role="article">
+                            <div class="product-image" aria-label="产品图片">
+                                <img
+                                    src="https://placehold.co/400x300/fca311/000000?text=用户行为分析"
+                                    alt="用户行为分析图表"
+                                    width="400"
+                                    height="300"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <span class="product-category">分析工具</span>
+                                <h3>用户行为分析</h3>
+                                <p>深入的用户行为分析工具，帮助理解用户需求和优化体验。</p>
+                                <div class="product-meta">
+                                    <span class="price">¥3,799</span>
+                                    <div class="rating" aria-label="评分 4.5 星">
+                                        <span>★★★★★</span>
+                                        <span class="rating-text">4.5</span>
+                                    </div>
+                                </div>
+                                <div class="product-actions">
+                                    <a href="/product-6.html" class="button small">查看详情</a>
+                                    <button class="button secondary small" aria-label="添加到收藏">❤</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 分页组件 -->
+                    <nav class="pagination" aria-label="产品列表分页">
+                        <a href="#" class="pagination-link" aria-label="上一页">‹ 上一页</a>
+                        <a href="#" class="pagination-link active" aria-current="page">1</a>
+                        <a href="#" class="pagination-link">2</a>
+                        <a href="#" class="pagination-link">3</a>
+                        <a href="#" class="pagination-link" aria-label="下一页">下一页 ›</a>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">找到适合您的产品？</h2>
+                        <p id="cta-description">立即联系我们获取定制化解决方案</p>
+                        <a href="/contact" class="cta-button" aria-label="联系我们">联系我们</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

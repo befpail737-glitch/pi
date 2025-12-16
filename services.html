@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 我们提供的专业服务，包括设计咨询、开发支持和培训">
+    <title>我们的服务 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem" aria-current="page">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <nav class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a>
+                        <span>服务</span>
+                    </nav>
+                    <h1 id="page-title">我们的服务</h1>
+                    <p>我们提供全方位的布局解决方案，从设计到实施再到优化</p>
+                </div>
+            </section>
+
+            <section class="services-overview" aria-labelledby="overview-title">
+                <div class="container">
+                    <h2 id="overview-title" class="text-center mb-6">为您的项目提供专业支持</h2>
+                    <p class="text-center mb-10 max-w-3xl mx-auto">无论您是初创公司还是大型企业，我们都有合适的服务方案来帮助您实现数字产品的卓越体验。</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="service-card card" role="article">
+                            <div class="service-image">
+                                <img
+                                    src="https://placehold.co/300x200/4361ee/FFFFFF?text=设计咨询"
+                                    alt="设计咨询服务展示"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>设计咨询服务</h3>
+                                <p>我们的设计专家将与您的团队合作，创建符合品牌形象且用户友好的界面设计。我们提供设计系统开发、用户体验研究和界面优化服务。</p>
+                                <ul class="service-features">
+                                    <li>设计系统创建</li>
+                                    <li>用户体验研究</li>
+                                    <li>界面原型制作</li>
+                                    <li>可访问性优化</li>
+                                </ul>
+                                <a href="/contact" class="button mt-4">了解更多</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card card" role="article">
+                            <div class="service-image">
+                                <img
+                                    src="https://placehold.co/300x200/3f37c9/FFFFFF?text=开发服务"
+                                    alt="开发实施服务展示"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>开发实施服务</h3>
+                                <p>从概念到部署，我们的开发团队将帮助您实现设计愿景。我们提供前端开发、性能优化和跨平台兼容性保障。</p>
+                                <ul class="service-features">
+                                    <li>响应式布局开发</li>
+                                    <li>性能优化</li>
+                                    <li>跨平台适配</li>
+                                    <li>代码审查</li>
+                                </ul>
+                                <a href="/contact" class="button mt-4">了解更多</a>
+                            </div>
+                        </div>
+
+                        <div class="service-card card" role="article">
+                            <div class="service-image">
+                                <img
+                                    src="https://placehold.co/300x200/7209b7/FFFFFF?text=培训支持"
+                                    alt="培训与支持服务展示"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>培训与支持</h3>
+                                <p>我们提供定制化培训课程，帮助您的团队掌握最新的布局技术和最佳实践。同时提供持续的技术支持服务。</p>
+                                <ul class="service-features">
+                                    <li>团队培训课程</li>
+                                    <li>最佳实践指导</li>
+                                    <li>持续技术支持</li>
+                                    <li>知识转移</li>
+                                </ul>
+                                <a href="/contact" class="button mt-4">了解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="process-section" aria-labelledby="process-title">
+                <div class="container">
+                    <h2 id="process-title" class="text-center mb-10">我们的工作流程</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="process-step text-center">
+                            <div class="step-number">1</div>
+                            <h3>需求分析</h3>
+                            <p>深入了解您的业务需求和用户目标，制定项目规划。</p>
+                        </div>
+                        
+                        <div class="process-step text-center">
+                            <div class="step-number">2</div>
+                            <h3>设计策划</h3>
+                            <p>创建线框图和视觉设计，与您确认设计方向。</p>
+                        </div>
+                        
+                        <div class="process-step text-center">
+                            <div class="step-number">3</div>
+                            <h3>开发实施</h3>
+                            <p>高效开发，定期汇报进度，确保项目按计划进行。</p>
+                        </div>
+                        
+                        <div class="process-step text-center">
+                            <div class="step-number">4</div>
+                            <h3>测试优化</h3>
+                            <p>全面测试，优化性能，确保交付高质量产品。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-studies" aria-labelledby="case-title">
+                <div class="container">
+                    <h2 id="case-title" class="text-center mb-10">成功案例</h2>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                        <div class="case-study-card card">
+                            <div class="case-study-content">
+                                <div class="case-study-category">电商平台</div>
+                                <h3>购物网站重构</h3>
+                                <p>为大型电商平台进行全面的界面重构，使用我们的响应式布局系统，成功将移动端转化率提升35%。</p>
+                                <div class="case-study-results">
+                                    <div class="result-item">
+                                        <span class="result-number">35%</span>
+                                        <span class="result-label">转化率提升</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">60%</span>
+                                        <span class="result-label">加载速度提升</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="button mt-4">查看案例研究</a>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study-card card">
+                            <div class="case-study-content">
+                                <div class="case-study-category">金融科技</div>
+                                <h3>企业级应用</h3>
+                                <p>为金融服务公司构建企业内部管理平台，实现复杂的表格和图表展示，提高工作效率。</p>
+                                <div class="case-study-results">
+                                    <div class="result-item">
+                                        <span class="result-number">50%</span>
+                                        <span class="result-label">效率提升</span>
+                                    </div>
+                                    <div class="result-item">
+                                        <span class="result-number">95%</span>
+                                        <span class="result-label">用户满意度</span>
+                                    </div>
+                                </div>
+                                <a href="#" class="button mt-4">查看案例研究</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pricing-section" aria-labelledby="pricing-title">
+                <div class="container">
+                    <h2 id="pricing-title" class="text-center mb-10">服务定价</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="pricing-card card text-center">
+                            <div class="pricing-header">
+                                <h3>基础服务</h3>
+                                <div class="pricing-price">¥15,000 <span>起</span></div>
+                                <p>适合小型项目</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>响应式布局开发</li>
+                                <li>1-3个页面</li>
+                                <li>基础SEO优化</li>
+                                <li>浏览器兼容性</li>
+                                <li>2次修改机会</li>
+                            </ul>
+                            <a href="/contact" class="button mt-6">开始项目</a>
+                        </div>
+                        
+                        <div class="pricing-card card text-center featured">
+                            <div class="popular-tag">最受欢迎</div>
+                            <div class="pricing-header">
+                                <h3>专业服务</h3>
+                                <div class="pricing-price">¥35,000 <span>起</span></div>
+                                <p>适合中型项目</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>完整设计系统</li>
+                                <li>5-10个页面</li>
+                                <li>高级SEO优化</li>
+                                <li>可访问性优化</li>
+                                <li>无限次修改</li>
+                                <li>1个月免费维护</li>
+                            </ul>
+                            <a href="/contact" class="button mt-6">开始项目</a>
+                        </div>
+                        
+                        <div class="pricing-card card text-center">
+                            <div class="pricing-header">
+                                <h3>企业服务</h3>
+                                <div class="pricing-price">¥65,000 <span>起</span></div>
+                                <p>适合大型项目</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li>定制化解决方案</li>
+                                <li>10+个页面</li>
+                                <li>性能优化</li>
+                                <li>安全审计</li>
+                                <li>无限次修改</li>
+                                <li>3个月免费维护</li>
+                                <li>专属技术支持</li>
+                            </ul>
+                            <a href="/contact" class="button mt-6">开始项目</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">准备好开始您的项目？</h2>
+                        <p id="cta-description">联系我们获取定制化的布局解决方案</p>
+                        <a href="/contact" class="cta-button" aria-label="联系我们">联系我们</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

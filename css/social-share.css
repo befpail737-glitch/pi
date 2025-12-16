@@ -1,0 +1,215 @@
+/* 社交媒体分享组件样式 */
+
+.social-share {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition-normal);
+  font-size: var(--font-size-lg);
+}
+
+.social-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+/* 不同样式的社交媒体按钮 */
+.social-btn.facebook {
+  color: #3b5998;
+  border-color: #3b5998;
+}
+
+.social-btn.facebook:hover {
+  background-color: #3b5998;
+  color: white;
+}
+
+.social-btn.twitter {
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.social-btn.twitter:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.social-btn.linkedin {
+  color: #0077b5;
+  border-color: #0077b5;
+}
+
+.social-btn.linkedin:hover {
+  background-color: #0077b5;
+  color: white;
+}
+
+.social-btn.wechat {
+  color: #07c160;
+  border-color: #07c160;
+}
+
+.social-btn.wechat:hover {
+  background-color: #07c160;
+  color: white;
+}
+
+.social-btn.weibo {
+  color: #e6162d;
+  border-color: #e6162d;
+}
+
+.social-btn.weibo:hover {
+  background-color: #e6162d;
+  color: white;
+}
+
+/* 水平排列的分享按钮 */
+.social-share.horizontal {
+  flex-direction: row;
+}
+
+/* 垂直排列的分享按钮 */
+.social-share.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-share.vertical .social-btn {
+  width: 35px;
+  height: 35px;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* 大尺寸分享按钮 */
+.social-btn.large {
+  width: 50px;
+  height: 50px;
+  font-size: var(--font-size-xl);
+}
+
+/* 小尺寸分享按钮 */
+.social-btn.small {
+  width: 30px;
+  height: 30px;
+  font-size: var(--font-size-sm);
+}
+
+/* 分享弹窗样式 */
+.share-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-normal);
+}
+
+.share-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.share-modal-content {
+  background-color: var(--background-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  transform: scale(0.9);
+  transition: var(--transition-normal);
+}
+
+.share-modal.active .share-modal-content {
+  transform: scale(1);
+}
+
+.share-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.share-modal-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+}
+
+.share-modal-close {
+  background: none;
+  border: none;
+  font-size: var(--font-size-xl);
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.share-modal-close:hover {
+  color: var(--text-primary);
+}
+
+.share-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.share-link input {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  margin-right: var(--spacing-sm);
+}
+
+.share-link button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 767px) {
+  .social-share {
+    gap: var(--spacing-xs);
+  }
+  
+  .social-btn {
+    width: 36px;
+    height: 36px;
+    font-size: var(--font-size-base);
+  }
+  
+  .share-modal-content {
+    width: 95%;
+    margin: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+}

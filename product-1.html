@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="设计系统管理器 - 一体化设计系统管理平台，帮助团队统一UI组件和设计规范">
+    <title>设计系统管理器 - 产品详情 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem" aria-current="page">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <div class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a> > <a href="/products">产品</a> > <span>设计系统管理器</span>
+                    </div>
+                    <h1 id="page-title">设计系统管理器</h1>
+                    <div class="product-meta">
+                        <span class="product-category">设计工具</span>
+                        <div class="rating" aria-label="评分 4.8 星">
+                            <span>★★★★★</span>
+                            <span class="rating-text">4.8</span>
+                        </div>
+                        <span class="price">¥2,999</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-detail" aria-labelledby="product-overview">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="product-image-large">
+                            <img 
+                                src="https://placehold.co/800x600/4361ee/FFFFFF?text=设计系统管理器主图" 
+                                alt="设计系统管理器主界面展示"
+                                width="800" 
+                                height="600"
+                                class="main-product-image"
+                                loading="lazy"
+                            >
+                            <div class="product-thumbnails">
+                                <img 
+                                    src="https://placehold.co/150x100/4361ee/FFFFFF?text=缩略图1" 
+                                    alt="产品视图1"
+                                    width="150" 
+                                    height="100"
+                                    class="thumbnail"
+                                    loading="lazy"
+                                >
+                                <img 
+                                    src="https://placehold.co/150x100/3a0ca3/FFFFFF?text=缩略图2" 
+                                    alt="产品视图2"
+                                    width="150" 
+                                    height="100"
+                                    class="thumbnail"
+                                    loading="lazy"
+                                >
+                                <img 
+                                    src="https://placehold.co/150x100/7209b7/FFFFFF?text=缩略图3" 
+                                    alt="产品视图3"
+                                    width="150" 
+                                    height="100"
+                                    class="thumbnail"
+                                    loading="lazy"
+                                >
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-description">
+                                <h2 id="product-overview">产品概述</h2>
+                                <p>一体化设计系统管理平台，帮助团队统一UI组件和设计规范。通过我们的平台，设计团队可以轻松创建、维护和共享设计系统，确保产品在所有平台和设备上保持一致的用户体验。</p>
+                                
+                                <h3>主要特性</h3>
+                                <ul class="feature-list">
+                                    <li>组件库管理</li>
+                                    <li>设计规范文档化</li>
+                                    <li>版本控制和协作</li>
+                                    <li>跨平台同步</li>
+                                    <li>实时预览</li>
+                                </ul>
+                                
+                                <h3>技术规格</h3>
+                                <ul class="spec-list">
+                                    <li>兼容主流设计工具 (Figma, Sketch, Adobe XD)</li>
+                                    <li>支持Web、iOS、Android平台</li>
+                                    <li>实时协作功能</li>
+                                    <li>API接口支持</li>
+                                    <li>安全的数据存储</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-actions">
+                                <button class="cta-button">立即购买</button>
+                                <button class="button secondary">添加到收藏</button>
+                                <button class="button secondary">获取报价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-features" aria-labelledby="features-title">
+                <div class="container">
+                    <h2 id="features-title">详细功能</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">🎨</div>
+                            <h3>统一设计语言</h3>
+                            <p>建立和维护一致的设计语言，确保所有产品组件风格统一，提升品牌识别度。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">🔄</div>
+                            <h3>实时同步</h3>
+                            <p>设计系统更新实时同步到所有集成工具，确保团队成员始终使用最新版本。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">👥</div>
+                            <h3>团队协作</h3>
+                            <p>支持多成员协作编辑，权限管理功能确保设计系统的安全和一致性。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">📱</div>
+                            <h3>多平台支持</h3>
+                            <p>生成适用于Web、iOS、Android等多个平台的组件代码，确保体验一致。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">📈</div>
+                            <h3>使用分析</h3>
+                            <p>跟踪组件使用情况和设计系统采纳度，为优化提供数据支持。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">🔒</div>
+                            <h3>安全存储</h3>
+                            <p>企业级安全保护，确保设计资产和代码片段的安全性与私密性。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-specs" aria-labelledby="specs-title">
+                <div class="container">
+                    <h2 id="specs-title">技术规格</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3>系统要求</h3>
+                            <ul class="spec-details">
+                                <li>操作系统: Windows 10+, macOS 10.15+, Linux</li>
+                                <li>内存: 8GB RAM推荐</li>
+                                <li>存储空间: 500MB可用空间</li>
+                                <li>网络: 宽带连接用于同步功能</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>兼容性</h3>
+                            <ul class="spec-details">
+                                <li>设计工具: Figma, Sketch, Adobe XD, Adobe Illustrator</li>
+                                <li>前端框架: React, Vue, Angular, Svelte</li>
+                                <li>平台: Web, iOS, Android</li>
+                                <li>浏览器: Chrome, Firefox, Safari, Edge</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials" aria-labelledby="testimonials-title">
+                <div class="container">
+                    <h2 id="testimonials-title">客户评价</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="testimonial-card card">
+                            <div class="testimonial-content">
+                                <div class="rating" aria-label="评分 5 星">
+                                    <span>★★★★★</span>
+                                </div>
+                                <p>"这个设计系统管理器彻底改变了我们的工作流程，现在整个团队都能保持设计一致性。"</p>
+                                <div class="testimonial-author">
+                                    <strong>张伟</strong>
+                                    <span>某互联网公司设计总监</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card card">
+                            <div class="testimonial-content">
+                                <div class="rating" aria-label="评分 5 星">
+                                    <span>★★★★★</span>
+                                </div>
+                                <p>"实施后，我们的开发效率提高了40%，UI组件复用率达到85%。"</p>
+                                <div class="testimonial-author">
+                                    <strong>李娜</strong>
+                                    <span>某科技公司产品经理</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card card">
+                            <div class="testimonial-content">
+                                <div class="rating" aria-label="评分 4 星">
+                                    <span>★★★★☆</span>
+                                </div>
+                                <p>"功能强大，学习曲线稍微陡峭，但一旦上手，价值巨大。"</p>
+                                <div class="testimonial-author">
+                                    <strong>王强</strong>
+                                    <span>某金融公司UI工程师</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">准备好提升您的设计效率？</h2>
+                        <p id="cta-description">立即购买设计系统管理器，或联系我们获取企业定制方案</p>
+                        <div class="cta-buttons">
+                            <button class="cta-button">立即购买</button>
+                            <a href="/contact" class="button secondary">联系我们</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

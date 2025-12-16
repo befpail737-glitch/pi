@@ -1,0 +1,178 @@
+/* 页面间平滑过渡动画 */
+
+/* 页面过渡容器 */
+.page-transition-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 80px); /* 减去导航栏高度 */
+}
+
+/* 页面进入动画 */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 页面退出动画 */
+.page-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+/* 淡入淡出过渡 */
+.fade-transition {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fade-transition.fade-exit {
+  opacity: 0;
+}
+
+/* 滑动过渡 */
+.slide-transition {
+  transform: translateX(0);
+  transition: transform 0.4s ease;
+}
+
+.slide-transition.slide-exit-left {
+  transform: translateX(-100%);
+}
+
+.slide-transition.slide-enter-right {
+  transform: translateX(100%);
+}
+
+.slide-transition.slide-enter-right-active {
+  transform: translateX(0);
+}
+
+/* 缩放过渡 */
+.scale-transition {
+  transform: scale(1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.scale-transition.scale-exit {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.scale-transition.scale-enter {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.scale-transition.scale-enter-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 导航链接动画效果 */
+.nav-menu a {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* 按钮悬停动画 */
+.button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+  z-index: -1;
+}
+
+.button:hover::before {
+  left: 100%;
+}
+
+/* 滚动到元素的动画 */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* 加载动画 */
+.loading-animation {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(67, 97, 238, 0.2);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* 骨架屏动画 */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: var(--border-radius-md);
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* 响应式动画 */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .page-enter,
+  .page-exit,
+  .fade-transition,
+  .slide-transition,
+  .scale-transition {
+    transition: none !important;
+    animation: none !important;
+  }
+}

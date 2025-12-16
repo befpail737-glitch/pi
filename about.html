@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 了解我们的公司历史、使命和团队">
+    <title>关于我们 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem" aria-current="page">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <nav class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a>
+                        <span>关于我们</span>
+                    </nav>
+                    <h1 id="page-title">关于我们</h1>
+                    <p>我们致力于创造卓越的用户体验和前沿的网页布局解决方案</p>
+                </div>
+            </section>
+
+            <section class="company-overview" aria-labelledby="overview-title">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 id="overview-title">我们的故事</h2>
+                            <p>PI Layout System成立于2020年，我们是一支充满激情的团队，专注于现代网页布局和用户体验设计。我们的使命是为全球开发者和设计师提供高效、美观且可访问的布局解决方案。</p>
+                            <p>从最初的开源项目到如今的企业级解决方案，我们始终坚持创新和用户至上的原则。我们的产品已经服务了数千家企业，帮助他们打造出色的数字体验。</p>
+                        </div>
+                        <div class="company-image">
+                            <img
+                                src="https://placehold.co/600x400/4361ee/FFFFFF?text=PI+Layout+System"
+                                alt="PI Layout System公司办公室"
+                                width="600"
+                                height="400"
+                                loading="lazy"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mission-vision" aria-labelledby="mission-title">
+                <div class="container">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="card">
+                            <div class="card-content">
+                                <h3 id="mission-title">我们的使命</h3>
+                                <p>通过创新的布局技术和设计系统，赋能开发者和设计师创造更美好的数字世界，同时确保所有用户都能平等地访问和使用技术产品。</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-content">
+                                <h3>我们的愿景</h3>
+                                <p>成为全球领先的布局解决方案提供商，推动网页设计标准的发展，使复杂的技术变得更加简单易用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="team-section" aria-labelledby="team-title">
+                <div class="container">
+                    <h2 id="team-title">核心团队</h2>
+                    <div class="team-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="team-card card" role="article">
+                            <div class="team-image" aria-label="团队成员照片">
+                                <img
+                                    src="https://placehold.co/250x250/4361ee/FFFFFF?text=张伟"
+                                    alt="CEO & 创始人 张伟"
+                                    width="250"
+                                    height="250"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>张伟</h3>
+                                <p class="position">CEO & 创始人</p>
+                                <p>拥有15年互联网产品经验，前某知名公司技术总监。</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card card" role="article">
+                            <div class="team-image" aria-label="团队成员照片">
+                                <img
+                                    src="https://placehold.co/250x250/3f37c9/FFFFFF?text=李娜"
+                                    alt="首席设计师 李娜"
+                                    width="250"
+                                    height="250"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>李娜</h3>
+                                <p class="position">首席设计师</p>
+                                <p>国际知名设计奖项获得者，专注用户体验设计10年。</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card card" role="article">
+                            <div class="team-image" aria-label="团队成员照片">
+                                <img
+                                    src="https://placehold.co/250x250/7209b7/FFFFFF?text=王强"
+                                    alt="技术总监 王强"
+                                    width="250"
+                                    height="250"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>王强</h3>
+                                <p class="position">技术总监</p>
+                                <p>全栈开发专家，对前端性能优化有深入研究。</p>
+                            </div>
+                        </div>
+
+                        <div class="team-card card" role="article">
+                            <div class="team-image" aria-label="团队成员照片">
+                                <img
+                                    src="https://placehold.co/250x250/f72585/FFFFFF?text=陈静"
+                                    alt="产品总监 陈静"
+                                    width="250"
+                                    height="250"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content text-center">
+                                <h3>陈静</h3>
+                                <p class="position">产品总监</p>
+                                <p>资深产品经理，擅长将用户需求转化为优秀的产品体验。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="achievements" aria-labelledby="achievements-title">
+                <div class="container">
+                    <h2 id="achievements-title">我们的成就</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <div class="achievement-card text-center">
+                            <div class="achievement-number">5000+</div>
+                            <div class="achievement-label">服务企业</div>
+                        </div>
+                        <div class="achievement-card text-center">
+                            <div class="achievement-number">98%</div>
+                            <div class="achievement-label">客户满意度</div>
+                        </div>
+                        <div class="achievement-card text-center">
+                            <div class="achievement-number">50+</div>
+                            <div class="achievement-label">设计奖项</div>
+                        </div>
+                        <div class="achievement-card text-center">
+                            <div class="achievement-number">24/7</div>
+                            <div class="achievement-label">支持服务</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="timeline-section" aria-labelledby="timeline-title">
+                <div class="container">
+                    <h2 id="timeline-title">发展历程</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-content">
+                                <h3>公司成立</h3>
+                                <p>PI Layout System正式成立，推出首个开源布局库</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-content">
+                                <h3>产品发布</h3>
+                                <p>发布商业版布局系统，获得市场认可</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-content">
+                                <h3>扩展团队</h3>
+                                <p>团队扩展到30人，产品覆盖亚太地区</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-content">
+                                <h3>技术突破</h3>
+                                <p>发布AI增强的布局优化功能</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2024</div>
+                            <div class="timeline-content">
+                                <h3>国际化</h3>
+                                <p>进入欧美市场，全球用户超过20万</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">加入我们的团队</h2>
+                        <p id="cta-description">我们正在寻找有才华的设计师和开发者加入我们</p>
+                        <a href="/contact" class="cta-button" aria-label="查看职位">查看职位</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

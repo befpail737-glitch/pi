@@ -1,0 +1,112 @@
+{
+  "imageMap": {
+    "logo": "/images/logo.png",
+    "favicon": "/images/favicon.ico",
+    "products": {
+      "product-1": {
+        "main": "/images/products/product-1-main.jpg",
+        "thumbnail": "/images/products/product-1-thumb.jpg",
+        "gallery": [
+          "/images/products/product-1-gallery-1.jpg",
+          "/images/products/product-1-gallery-2.jpg",
+          "/images/products/product-1-gallery-3.jpg"
+        ]
+      },
+      "product-2": {
+        "main": "/images/products/product-2-main.jpg",
+        "thumbnail": "/images/products/product-2-thumb.jpg",
+        "gallery": [
+          "/images/products/product-2-gallery-1.jpg",
+          "/images/products/product-2-gallery-2.jpg",
+          "/images/products/product-2-gallery-3.jpg"
+        ]
+      },
+      "product-3": {
+        "main": "/images/products/product-3-main.jpg",
+        "thumbnail": "/images/products/product-3-thumb.jpg",
+        "gallery": [
+          "/images/products/product-3-gallery-1.jpg",
+          "/images/products/product-3-gallery-2.jpg",
+          "/images/products/product-3-gallery-3.jpg"
+        ]
+      },
+      "product-4": {
+        "main": "/images/products/product-4-main.jpg",
+        "thumbnail": "/images/products/product-4-thumb.jpg",
+        "gallery": [
+          "/images/products/product-4-gallery-1.jpg",
+          "/images/products/product-4-gallery-2.jpg",
+          "/images/products/product-4-gallery-3.jpg"
+        ]
+      },
+      "product-5": {
+        "main": "/images/products/product-5-main.jpg",
+        "thumbnail": "/images/products/product-5-thumb.jpg",
+        "gallery": [
+          "/images/products/product-5-gallery-1.jpg",
+          "/images/products/product-5-gallery-2.jpg",
+          "/images/products/product-5-gallery-3.jpg"
+        ]
+      },
+      "product-6": {
+        "main": "/images/products/product-6-main.jpg",
+        "thumbnail": "/images/products/product-6-thumb.jpg",
+        "gallery": [
+          "/images/products/product-6-gallery-1.jpg",
+          "/images/products/product-6-gallery-2.jpg",
+          "/images/products/product-6-gallery-3.jpg"
+        ]
+      }
+    },
+    "blog": {
+      "2025-layout-trends": {
+        "featured": "/images/blog/2025-layout-trends-feature.jpg",
+        "hero": "/images/blog/2025-layout-trends-hero.jpg"
+      },
+      "modern-css-layouts": {
+        "featured": "/images/blog/modern-css-layouts-feature.jpg",
+        "hero": "/images/blog/modern-css-layouts-hero.jpg"
+      },
+      "responsive-design-best-practices": {
+        "featured": "/images/blog/responsive-design-feature.jpg",
+        "hero": "/images/blog/responsive-design-hero.jpg"
+      },
+      "accessible-web-design": {
+        "featured": "/images/blog/accessible-design-feature.jpg",
+        "hero": "/images/blog/accessible-design-hero.jpg"
+      }
+    },
+    "avatars": {
+      "team_member_1": "/images/avatars/team-member-1.jpg",
+      "team_member_2": "/images/avatars/team-member-2.jpg",
+      "team_member_3": "/images/avatars/team-member-3.jpg",
+      "team_member_4": "/images/avatars/team-member-4.jpg"
+    },
+    "placeholders": {
+      "hero_banner": "/images/placeholders/hero-banner.jpg",
+      "product_detail_large": "/images/placeholders/product-detail-large.jpg",
+      "product_thumbnail": "/images/placeholders/product-thumbnail.jpg",
+      "blog_feature": "/images/placeholders/blog-feature.jpg",
+      "article_image": "/images/placeholders/article-image.jpg",
+      "team_member": "/images/placeholders/team-member.jpg",
+      "company_image": "/images/placeholders/company-image.jpg"
+    },
+    "social_media": {
+      "og_image": "/images/social/og-image.jpg",
+      "twitter_card": "/images/social/twitter-card.jpg"
+    }
+  },
+  "sizes": {
+    "logo": {"width": 150, "height": 40},
+    "product_main": {"width": 800, "height": 600},
+    "product_thumbnail": {"width": 300, "height": 225},
+    "blog_featured": {"width": 800, "height": 400},
+    "avatar": {"width": 200, "height": 200},
+    "placeholder": {"width": 800, "height": 600}
+  },
+  "formats": {
+    "jpeg_quality": 85,
+    "webp_fallback": true,
+    "responsive_sizes": [320, 768, 1024, 1200, 1920]
+  }
+}

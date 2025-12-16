@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="操作结果反馈 - PI Layout System">
+    <title>操作结果 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="feedback-page" aria-labelledby="feedback-title">
+                <div class="container text-center">
+                    <div class="feedback-content">
+                        <!-- 成功反馈 -->
+                        <div class="feedback-success" id="successFeedback" style="display: none;">
+                            <div class="feedback-icon success-icon" aria-hidden="true">✓</div>
+                            <h1 id="feedback-title">操作成功！</h1>
+                            <p>您的请求已成功处理，更改已保存。</p>
+                            <div class="feedback-actions">
+                                <a href="/" class="button">返回首页</a>
+                                <a href="/contact" class="button secondary">联系支持</a>
+                            </div>
+                        </div>
+
+                        <!-- 失败反馈 -->
+                        <div class="feedback-failure" id="failureFeedback" style="display: none;">
+                            <div class="feedback-icon failure-icon" aria-hidden="true">✗</div>
+                            <h1 id="feedback-title">操作失败</h1>
+                            <p>处理您的请求时出现了问题，请重试或联系支持。</p>
+                            <div class="feedback-actions">
+                                <button class="button" onclick="retryAction()">重试</button>
+                                <a href="/contact" class="button secondary">联系支持</a>
+                            </div>
+                        </div>
+
+                        <!-- 加载中反馈 -->
+                        <div class="feedback-loading" id="loadingFeedback">
+                            <div class="feedback-icon loading-icon" aria-hidden="true">⏳</div>
+                            <h1 id="feedback-title">处理中...</h1>
+                            <p>我们正在处理您的请求，请稍候。</p>
+                            <div class="loading-spinner" aria-label="加载中"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="feedback-examples" aria-labelledby="examples-title">
+                <div class="container">
+                    <h2 id="examples-title" class="text-center mb-10">反馈示例</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="card" role="article">
+                            <div class="card-content text-center">
+                                <div class="feedback-icon success-icon" style="font-size: 2rem; color: var(--success-color); margin-bottom: var(--spacing-md);" aria-hidden="true">✓</div>
+                                <h3>成功提示</h3>
+                                <p>用于表示操作成功的反馈信息，通常使用绿色和勾选图标。</p>
+                            </div>
+                        </div>
+                        <div class="card" role="article">
+                            <div class="card-content text-center">
+                                <div class="feedback-icon failure-icon" style="font-size: 2rem; color: var(--error-color); margin-bottom: var(--spacing-md);" aria-hidden="true">✗</div>
+                                <h3>错误提示</h3>
+                                <p>用于表示操作失败或错误的反馈信息，通常使用红色和叉号图标。</p>
+                            </div>
+                        </div>
+                        <div class="card" role="article">
+                            <div class="card-content text-center">
+                                <div class="feedback-icon warning-icon" style="font-size: 2rem; color: var(--warning-color); margin-bottom: var(--spacing-md);" aria-hidden="true">⚠</div>
+                                <h3>警告提示</h3>
+                                <p>用于提醒用户注意的反馈信息，通常使用黄色和感叹号图标。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 模拟反馈状态显示
+        window.addEventListener('load', function() {
+            // 随机显示某种反馈状态
+            setTimeout(function() {
+                const loadingFeedback = document.getElementById('loadingFeedback');
+                const successFeedback = document.getElementById('successFeedback');
+                const failureFeedback = document.getElementById('failureFeedback');
+                
+                // 随机选择一种反馈状态(90%成功，10%失败)
+                const isSuccess = Math.random() > 0.1;
+                
+                if (loadingFeedback) loadingFeedback.style.display = 'none';
+                
+                if (isSuccess) {
+                    if (successFeedback) {
+                        successFeedback.style.display = 'block';
+                        // 更新标题ID以避免冲突
+                        successFeedback.querySelector('h1').id = 'success-title';
+                    }
+                } else {
+                    if (failureFeedback) {
+                        failureFeedback.style.display = 'block';
+                        // 更新标题ID以避免冲突
+                        failureFeedback.querySelector('h1').id = 'failure-title';
+                    }
+                }
+            }, 2000); // 2秒后显示结果
+        });
+
+        function retryAction() {
+            // 重新显示加载状态
+            const loadingFeedback = document.getElementById('loadingFeedback');
+            const successFeedback = document.getElementById('successFeedback');
+            const failureFeedback = document.getElementById('failureFeedback');
+            
+            if (successFeedback) successFeedback.style.display = 'none';
+            if (failureFeedback) failureFeedback.style.display = 'none';
+            if (loadingFeedback) {
+                loadingFeedback.style.display = 'block';
+                loadingFeedback.querySelector('h1').id = 'feedback-title'; // 恢复ID
+            }
+            
+            // 重新随机显示结果
+            setTimeout(function() {
+                if (loadingFeedback) loadingFeedback.style.display = 'none';
+                
+                // 50%成功率
+                const isSuccess = Math.random() > 0.5;
+                
+                if (isSuccess) {
+                    if (successFeedback) {
+                        successFeedback.style.display = 'block';
+                        successFeedback.querySelector('h1').id = 'success-title';
+                    }
+                } else {
+                    if (failureFeedback) {
+                        failureFeedback.style.display = 'block';
+                        failureFeedback.querySelector('h1').id = 'failure-title';
+                    }
+                }
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

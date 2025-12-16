@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="原型设计工具 - 强大的原型设计工具，支持交互式原型制作和用户测试">
+    <title>原型设计工具 - 产品详情 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem" aria-current="page">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <div class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a> > <a href="/products">产品</a> > <span>原型设计工具</span>
+                    </div>
+                    <h1 id="page-title">原型设计工具</h1>
+                    <div class="product-meta">
+                        <span class="product-category">设计工具</span>
+                        <div class="rating" aria-label="评分 4.6 星">
+                            <span>★★★★★</span>
+                            <span class="rating-text">4.6</span>
+                        </div>
+                        <span class="price">¥1,899</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-detail" aria-labelledby="product-overview">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="product-image-large">
+                            <div class="placeholder-image-large">原型界面展示</div>
+                            <div class="product-thumbnails">
+                                <div class="thumbnail">交互原型</div>
+                                <div class="thumbnail">用户测试</div>
+                                <div class="thumbnail">团队协作</div>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-description">
+                                <h2 id="product-overview">产品概述</h2>
+                                <p>强大的原型设计工具，支持交互式原型制作和用户测试。我们的工具让设计师能够快速创建高保真原型，模拟真实用户交互，收集反馈并优化设计，从而缩短产品开发周期，提高用户体验。</p>
+                                
+                                <h3>主要特性</h3>
+                                <ul class="feature-list">
+                                    <li>直观的拖拽界面</li>
+                                    <li>丰富的交互组件</li>
+                                    <li>用户测试集成</li>
+                                    <li>实时协作功能</li>
+                                    <li>多平台预览</li>
+                                </ul>
+                                
+                                <h3>技术规格</h3>
+                                <ul class="spec-list">
+                                    <li>云端存储与同步</li>
+                                    <li>支持多种文件格式导入</li>
+                                    <li>响应式设计适配</li>
+                                    <li>跨平台访问</li>
+                                    <li>版本控制功能</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="product-actions">
+                                <button class="cta-button">立即购买</button>
+                                <button class="button secondary">添加到收藏</button>
+                                <button class="button secondary">获取报价</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-features" aria-labelledby="features-title">
+                <div class="container">
+                    <h2 id="features-title">详细功能</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">🖱️</div>
+                            <h3>交互设计</h3>
+                            <p>创建点击、滚动、悬停等多种交互效果，模拟真实用户体验。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">📱</div>
+                            <h3>多设备预览</h3>
+                            <p>在不同设备和屏幕尺寸上预览原型，确保设计的一致性。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">👥</div>
+                            <h3>用户测试</h3>
+                            <p>集成用户测试功能，直接在原型上收集用户反馈和行为数据。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">🔄</div>
+                            <h3>实时协作</h3>
+                            <p>设计团队可同时编辑原型，实时同步更改，提高工作效率。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">⚡</div>
+                            <h3>快速迭代</h3>
+                            <p>快速修改设计并立即更新原型，加速设计验证过程。</p>
+                        </div>
+                        <div class="feature-card" role="article">
+                            <div class="feature-icon" aria-hidden="true">📊</div>
+                            <h3>分析报告</h3>
+                            <p>自动生成用户测试报告，提供数据驱动的设计改进建议。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-specs" aria-labelledby="specs-title">
+                <div class="container">
+                    <h2 id="specs-title">技术规格</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3>系统要求</h3>
+                            <ul class="spec-details">
+                                <li>操作系统: Windows 10+, macOS 10.15+, Linux</li>
+                                <li>内存: 8GB RAM推荐</li>
+                                <li>网络: 宽带连接用于云同步</li>
+                                <li>浏览器: 现代浏览器支持</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>兼容性</h3>
+                            <ul class="spec-details">
+                                <li>文件格式: Figma, Sketch, Adobe XD, PNG, JPG, SVG</li>
+                                <li>平台: Web, iOS, Android, 桌面应用</li>
+                                <li>集成: 设计工具插件, 开发工具链</li>
+                                <li>API: 支持与项目管理工具集成</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials" aria-labelledby="testimonials-title">
+                <div class="container">
+                    <h2 id="testimonials-title">客户评价</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="testimonial-card card">
+                            <div class="testimonial-content">
+                                <div class="rating" aria-label="评分 5 星">
+                                    <span>★★★★★</span>
+                                </div>
+                                <p>"这款工具大大提升了我们的设计验证效率，用户测试变得非常简单。"</p>
+                                <div class="testimonial-author">
+                                    <strong>周设计师</strong>
+                                    <span>某设计公司首席设计师</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card card">
+                            <div class="testimonial-content">
+                                <div class="rating" aria-label="评分 5 星">
+                                    <span>★★★★★</span>
+                                </div>
+                                <p>"团队协作功能特别棒，我们能够实时看到彼此的设计变更。"</p>
+                                <div class="testimonial-author">
+                                    <strong>吴经理</strong>
+                                    <span>某科技公司产品总监</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card card">
+                            <div class="testimonial-content">
+                                <div class="rating" aria-label="评分 4 星">
+                                    <span>★★★★☆</span>
+                                </div>
+                                <p>"学习曲线较平缓，功能丰富，但某些高级功能需要时间掌握。"</p>
+                                <div class="testimonial-author">
+                                    <strong>郑总监</strong>
+                                    <span>某互联网公司设计负责人</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">加速设计验证过程</h2>
+                        <p id="cta-description">立即购买原型设计工具，或联系我们获取免费试用</p>
+                        <div class="cta-buttons">
+                            <button class="cta-button">立即购买</button>
+                            <a href="/contact" class="button secondary">联系我们</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

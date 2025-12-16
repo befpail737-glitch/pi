@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 最新的行业新闻、技术文章和设计趋势">
+    <title>博客 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <nav class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a>
+                        <span>博客</span>
+                    </nav>
+                    <h1 id="page-title">最新资讯</h1>
+                    <p>探索前端技术、设计趋势和用户体验最佳实践</p>
+                </div>
+            </section>
+
+            <section class="blog-intro" aria-labelledby="intro-title">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2">
+                            <h2 id="intro-title" class="sr-only">最新文章</h2>
+                            <div class="featured-post card">
+                                <div class="post-image" aria-label="文章配图">
+                                    <img
+                                        src="https://placehold.co/800x400/4361ee/FFFFFF?text=2025年布局趋势"
+                                        alt="2025年网页布局设计趋势预测文章图片"
+                                        width="800"
+                                        height="400"
+                                        loading="lazy"
+                                    >
+                                </div>
+                                <div class="card-content">
+                                    <div class="post-meta">
+                                        <span class="post-category">技术趋势</span>
+                                        <span class="post-date">2025年1月15日</span>
+                                    </div>
+                                    <h3>2025年网页布局设计趋势预测</h3>
+                                    <p>随着Web技术的不断发展，2025年将看到更多创新的布局模式和设计理念。我们将从网格系统、响应式设计到可访问性等方面探讨未来趋势。</p>
+                                    <div class="post-actions">
+                                        <a href="/blog/2025-layout-trends.html" class="button">阅读更多</a>
+                                        <div class="social-share" aria-label="分享到社交媒体">
+                                            <button class="social-btn" aria-label="分享到微信">WeChat</button>
+                                            <button class="social-btn" aria-label="分享到微博">Weibo</button>
+                                            <button class="social-btn" aria-label="分享到LinkedIn">LinkedIn</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="card">
+                                <div class="card-content">
+                                    <h3>订阅更新</h3>
+                                    <p>订阅我们的博客，获取最新技术文章和设计趋势</p>
+                                    <form class="newsletter-form" aria-label="订阅表单">
+                                        <input type="email" placeholder="您的邮箱地址" aria-label="输入邮箱地址">
+                                        <button type="submit" class="button full-width">订阅</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="card mt-6">
+                                <div class="card-content">
+                                    <h3>热门标签</h3>
+                                    <div class="tag-cloud">
+                                        <a href="#" class="tag">响应式设计</a>
+                                        <a href="#" class="tag">CSS Grid</a>
+                                        <a href="#" class="tag">用户体验</a>
+                                        <a href="#" class="tag">前端开发</a>
+                                        <a href="#" class="tag">可访问性</a>
+                                        <a href="#" class="tag">性能优化</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-posts" aria-labelledby="posts-title">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="lg:col-span-2">
+                            <h2 id="posts-title" class="sr-only">博客文章列表</h2>
+                            <div class="posts-filter" aria-label="文章筛选">
+                                <div class="filter-buttons">
+                                    <button class="filter-btn active" data-category="all">全部</button>
+                                    <button class="filter-btn" data-category="design">设计</button>
+                                    <button class="filter-btn" data-category="development">开发</button>
+                                    <button class="filter-btn" data-category="trends">趋势</button>
+                                    <button class="filter-btn" data-category="accessibility">可访问性</button>
+                                </div>
+                            </div>
+                            
+                            <div class="posts-grid">
+                                <!-- 文章 1 -->
+                                <article class="post-card card" role="article" data-category="development">
+                                    <div class="post-image" aria-label="文章配图">
+                                        <img
+                                            src="https://placehold.co/300x200/3f37c9/FFFFFF?text=CSS+Grid"
+                                            alt="现代CSS布局技术详解图片"
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="post-meta">
+                                            <span class="post-category">开发</span>
+                                            <span class="post-date">2025年1月12日</span>
+                                        </div>
+                                        <h3>现代CSS布局技术详解</h3>
+                                        <p>深入了解Flexbox、Grid和多列布局的高级应用，以及如何在实际项目中有效使用这些技术。</p>
+                                        <a href="/blog/modern-css-layouts.html" class="read-more">阅读更多 ›</a>
+                                    </div>
+                                </article>
+                                
+                                <!-- 文章 2 -->
+                                <article class="post-card card" role="article" data-category="design">
+                                    <div class="post-image" aria-label="文章配图">
+                                        <img
+                                            src="https://placehold.co/300x200/7209b7/FFFFFF?text=响应式设计"
+                                            alt="响应式设计最佳实践图片"
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="post-meta">
+                                            <span class="post-category">设计</span>
+                                            <span class="post-date">2025年1月10日</span>
+                                        </div>
+                                        <h3>响应式设计最佳实践</h3>
+                                        <p>探讨如何为不同设备创建出色的用户体验，以及设计师和开发者应该注意的关键原则。</p>
+                                        <a href="/blog/responsive-design-best-practices.html" class="read-more">阅读更多 ›</a>
+                                    </div>
+                                </article>
+                                
+                                <!-- 文章 3 -->
+                                <article class="post-card card" role="article" data-category="accessibility">
+                                    <div class="post-image" aria-label="文章配图">
+                                        <img
+                                            src="https://placehold.co/300x200/f72585/FFFFFF?text=可访问性"
+                                            alt="创建可访问的网页布局图片"
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="post-meta">
+                                            <span class="post-category">可访问性</span>
+                                            <span class="post-date">2025年1月8日</span>
+                                        </div>
+                                        <h3>创建可访问的网页布局</h3>
+                                        <p>了解如何设计和开发满足WCAG标准的网站，确保所有用户都能平等访问您的内容。</p>
+                                        <a href="/blog/accessible-web-design.html" class="read-more">阅读更多 ›</a>
+                                    </div>
+                                </article>
+                                
+                                <!-- 文章 4 -->
+                                <article class="post-card card" role="article" data-category="trends">
+                                    <div class="post-image" aria-label="文章配图">
+                                        <img
+                                            src="https://placehold.co/300x200/4cc9f0/000000?text=前端框架"
+                                            alt="前端框架选择指南图片"
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="post-meta">
+                                            <span class="post-category">趋势</span>
+                                            <span class="post-date">2025年1月5日</span>
+                                        </div>
+                                        <h3>前端框架选择指南</h3>
+                                        <p>比较当前最流行的前端框架，帮助您为下一个项目选择最适合的技术栈。</p>
+                                        <a href="/blog/frontend-frameworks-2025.html" class="read-more">阅读更多 ›</a>
+                                    </div>
+                                </article>
+                                
+                                <!-- 文章 5 -->
+                                <article class="post-card card" role="article" data-category="development">
+                                    <div class="post-image" aria-label="文章配图">
+                                        <img
+                                            src="https://placehold.co/300x200/fca311/000000?text=性能优化"
+                                            alt="性能优化实战技巧图片"
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="post-meta">
+                                            <span class="post-category">开发</span>
+                                            <span class="post-date">2024年12月28日</span>
+                                        </div>
+                                        <h3>性能优化实战技巧</h3>
+                                        <p>实用的前端性能优化策略，帮助您减少加载时间、提高用户体验和SEO排名。</p>
+                                        <a href="/blog/performance-optimization-tips.html" class="read-more">阅读更多 ›</a>
+                                    </div>
+                                </article>
+                                
+                                <!-- 文章 6 -->
+                                <article class="post-card card" role="article" data-category="design">
+                                    <div class="post-image" aria-label="文章配图">
+                                        <img
+                                            src="https://placehold.co/300x200/e9ecef/495057?text=设计系统"
+                                            alt="设计系统创建流程图片"
+                                            width="300"
+                                            height="200"
+                                            loading="lazy"
+                                        >
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="post-meta">
+                                            <span class="post-category">设计</span>
+                                            <span class="post-date">2024年12月25日</span>
+                                        </div>
+                                        <h3>设计系统创建流程</h3>
+                                        <p>从零开始构建设计系统的完整流程，包括组件库、设计原则和实施策略。</p>
+                                        <a href="/blog/design-system-process.html" class="read-more">阅读更多 ›</a>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <!-- 分页 -->
+                            <nav class="pagination" aria-label="博客文章分页">
+                                <a href="#" class="pagination-link" aria-label="上一页">‹ 上一页</a>
+                                <a href="#" class="pagination-link active" aria-current="page">1</a>
+                                <a href="#" class="pagination-link">2</a>
+                                <a href="#" class="pagination-link">3</a>
+                                <a href="#" class="pagination-link">4</a>
+                                <a href="#" class="pagination-link" aria-label="下一页">下一页 ›</a>
+                            </nav>
+                        </div>
+                        
+                        <aside class="sidebar" aria-label="博客侧边栏">
+                            <div class="card">
+                                <div class="card-content">
+                                    <h3>热门文章</h3>
+                                    <ul class="popular-posts">
+                                        <li><a href="/blog/2025-layout-trends.html">2025年网页布局设计趋势预测</a></li>
+                                        <li><a href="/blog/modern-css-layouts.html">现代CSS布局技术详解</a></li>
+                                        <li><a href="/blog/responsive-design-best-practices.html">响应式设计最佳实践</a></li>
+                                        <li><a href="/blog/accessible-web-design.html">创建可访问的网页布局</a></li>
+                                        <li><a href="/blog/frontend-frameworks-2025.html">前端框架选择指南</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div class="card mt-6">
+                                <div class="card-content">
+                                    <h3>档案</h3>
+                                    <ul class="archive-list">
+                                        <li><a href="#">2025年1月 (5)</a></li>
+                                        <li><a href="#">2024年12月 (8)</a></li>
+                                        <li><a href="#">2024年11月 (7)</a></li>
+                                        <li><a href="#">2024年10月 (6)</a></li>
+                                        <li><a href="#">2024年9月 (9)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">想了解更多专业内容？</h2>
+                        <p id="cta-description">订阅我们的通讯，获取每月精选的技术文章</p>
+                        <form class="newsletter-form-inline" aria-label="订阅表单">
+                            <input type="email" placeholder="您的邮箱地址" aria-label="输入邮箱地址">
+                            <button type="submit" class="cta-button" aria-label="订阅">订阅</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 文章筛选功能
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // 移除所有按钮的active状态
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // 添加当前按钮的active状态
+                this.classList.add('active');
+                
+                const category = this.getAttribute('data-category');
+                const posts = document.querySelectorAll('.post-card');
+                
+                posts.forEach(post => {
+                    if (category === 'all' || post.getAttribute('data-category') === category) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

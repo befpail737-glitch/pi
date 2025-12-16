@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 现代化、响应式的网页布局解决方案，提供模块化组件和性能优化">
+    <title>PI Layout System - 响应式布局系统</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="hero-banner" aria-labelledby="hero-title">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 id="hero-title">欢迎来到PI布局系统</h1>
+                        <p>现代化、响应式的网页布局解决方案</p>
+                        <a href="#features" class="cta-button" aria-label="了解更多功能">立即开始</a>
+                    </div>
+                    <div class="hero-media">
+                        <img
+                            src="https://placehold.co/1200x600/4361ee/FFFFFF?text=Hero+Banner"
+                            data-src="https://placehold.co/1200x600/4361ee/FFFFFF?text=Hero+Banner"
+                            alt="PI Layout System界面截图"
+                            loading="lazy"
+                            width="1200"
+                            height="600"
+                            class="hero-image"
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-grid" aria-labelledby="features-title">
+                <div class="container">
+                    <h2 id="features-title">核心功能</h2>
+                    <div class="feature-grid-container grid-3-col" role="list">
+                        <div class="feature-card" role="listitem">
+                            <div class="feature-icon" aria-hidden="true">📱</div>
+                            <h3>响应式设计</h3>
+                            <p>适应所有设备尺寸</p>
+                        </div>
+                        <div class="feature-card" role="listitem">
+                            <div class="feature-icon" aria-hidden="true">🧩</div>
+                            <h3>模块化组件</h3>
+                            <p>可复用的设计元素</p>
+                        </div>
+                        <div class="feature-card" role="listitem">
+                            <div class="feature-icon" aria-hidden="true">⚡</div>
+                            <h3>性能优化</h3>
+                            <p>快速加载和渲染</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-cards" aria-labelledby="products-title">
+                <div class="container">
+                    <h2 id="products-title">产品展示</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <article class="card" role="article">
+                            <div class="product-image-placeholder">
+                                <img
+                                    src="https://placehold.co/300x200/4361ee/FFFFFF?text=设计系统管理器"
+                                    alt="设计系统管理器图片"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <h3>设计系统管理器</h3>
+                                <p>一体化设计系统管理平台，帮助团队统一UI组件和设计规范。</p>
+                                <a href="/product-1.html" class="button small">查看详情</a>
+                            </div>
+                        </article>
+                        <article class="card" role="article">
+                            <div class="product-image-placeholder">
+                                <img
+                                    src="https://placehold.co/300x200/3f37c9/FFFFFF?text=前端开发框架"
+                                    alt="前端开发框架图片"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <h3>前端开发框架</h3>
+                                <p>高性能响应式前端开发框架，支持现代Web标准和可访问性。</p>
+                                <a href="/product-2.html" class="button small">查看详情</a>
+                            </div>
+                        </article>
+                        <article class="card" role="article">
+                            <div class="product-image-placeholder">
+                                <img
+                                    src="https://placehold.co/300x200/7209b7/FFFFFF?text=数据分析平台"
+                                    alt="数据分析平台图片"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <h3>数据分析平台</h3>
+                                <p>全面的数据分析解决方案，支持实时数据可视化和报告生成。</p>
+                                <a href="/product-3.html" class="button small">查看详情</a>
+                            </div>
+                        </article>
+                        <article class="card" role="article">
+                            <div class="product-image-placeholder">
+                                <img
+                                    src="https://placehold.co/300x200/f72585/FFFFFF?text=原型设计工具"
+                                    alt="原型设计工具图片"
+                                    width="300"
+                                    height="200"
+                                    loading="lazy"
+                                >
+                            </div>
+                            <div class="card-content">
+                                <h3>原型设计工具</h3>
+                                <p>强大的原型设计工具，支持交互式原型制作和用户测试。</p>
+                                <a href="/product-4.html" class="button small">查看详情</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">准备开始您的项目？</h2>
+                        <p id="cta-description">立即体验我们的布局系统</p>
+                        <a href="/contact" class="cta-button" aria-label="联系我们">联系我们</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/transitions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

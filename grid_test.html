@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid系统测试</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: var(--spacing-md);
+            background-color: var(--background-color);
+            color: var(--text-primary);
+        }
+        
+        .test-card {
+            background-color: var(--surface-color);
+            border-radius: var(--border-radius-md);
+            padding: var(--spacing-md);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-normal);
+        }
+        
+        .test-section {
+            margin-bottom: var(--spacing-xl);
+        }
+        
+        h2 {
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: var(--spacing-xs);
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</head>
+<body>
+    <h1>12列Grid系统测试</h1>
+    
+    <div class="test-section">
+        <h2>基础12列网格测试</h2>
+        <div class="grid grid-cols-12 gap-4">
+            <div class="test-card">1</div>
+            <div class="test-card">2</div>
+            <div class="test-card">3</div>
+            <div class="test-card">4</div>
+            <div class="test-card">5</div>
+            <div class="test-card">6</div>
+            <div class="test-card">7</div>
+            <div class="test-card">8</div>
+            <div class="test-card">9</div>
+            <div class="test-card">10</div>
+            <div class="test-card">11</div>
+            <div class="test-card">12</div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>不同列数组合测试</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="test-card">2列</div>
+            <div class="test-card">2列</div>
+        </div>
+        
+        <div style="margin-top: var(--spacing-md);" class="grid grid-cols-3 gap-4">
+            <div class="test-card">3列</div>
+            <div class="test-card">3列</div>
+            <div class="test-card">3列</div>
+        </div>
+        
+        <div style="margin-top: var(--spacing-md);" class="grid grid-cols-4 gap-4">
+            <div class="test-card">4列</div>
+            <div class="test-card">4列</div>
+            <div class="test-card">4列</div>
+            <div class="test-card">4列</div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>响应式网格测试</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="test-card">响应式1</div>
+            <div class="test-card">响应式2</div>
+            <div class="test-card">响应式3</div>
+            <div class="test-card">响应式4</div>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>跨列测试</h2>
+        <div class="grid grid-cols-12 gap-4">
+            <div class="test-card col-span-2">跨2列</div>
+            <div class="test-card col-span-3">跨3列</div>
+            <div class="test-card col-span-4">跨4列</div>
+            <div class="test-card col-span-3">跨3列</div>
+        </div>
+    </div>
+</body>
+</html>

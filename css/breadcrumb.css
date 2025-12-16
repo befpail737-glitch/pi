@@ -1,0 +1,105 @@
+/* 面包屑导航组件样式 */
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--spacing-sm) 0;
+  margin-bottom: var(--spacing-md);
+  list-style: none;
+  background-color: transparent;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  padding: 0 var(--spacing-xs);
+  color: var(--text-secondary);
+}
+
+.breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.breadcrumb-item.active a {
+  color: var(--text-primary);
+  pointer-events: none;
+  cursor: default;
+}
+
+/* 简化版面包屑（仅文本） */
+.breadcrumb-simple {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.breadcrumb-simple a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.breadcrumb-simple a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-simple span:last-child {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.breadcrumb-simple span:not(:last-child)::after {
+  content: " > ";
+  margin: 0 var(--spacing-xs);
+  color: var(--text-secondary);
+}
+
+/* 导航路径样式 */
+.navigation-path {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin: var(--spacing-md) 0;
+}
+
+.navigation-path a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.navigation-path a:hover {
+  text-decoration: underline;
+}
+
+.navigation-path span {
+  margin: 0 var(--spacing-xs);
+}
+
+/* 响应式设计 */
+@media (max-width: 767px) {
+  .breadcrumb {
+    font-size: var(--font-size-xs);
+  }
+  
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 var(--spacing-xs);
+  }
+}

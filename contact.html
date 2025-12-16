@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 联系我们，获取支持、报价或咨询我们的布局解决方案">
+    <title>联系我们 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem" aria-current="page">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <nav class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a>
+                        <span>联系</span>
+                    </nav>
+                    <h1 id="page-title">联系我们</h1>
+                    <p>有任何问题或需求？请随时与我们取得联系</p>
+                </div>
+            </section>
+
+            <section class="contact-info" aria-labelledby="info-title">
+                <div class="container">
+                    <h2 id="info-title" class="sr-only">联系信息</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <div class="contact-card card text-center" role="article">
+                            <div class="contact-icon" aria-hidden="true">📞</div>
+                            <div class="card-content">
+                                <h3>电话咨询</h3>
+                                <p>400-123-4567</p>
+                                <p>周一至周五 9:00-18:00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card card text-center" role="article">
+                            <div class="contact-icon" aria-hidden="true">✉️</div>
+                            <div class="card-content">
+                                <h3>邮件联系</h3>
+                                <p>info@pilayout.com</p>
+                                <p>support@pilayout.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card card text-center" role="article">
+                            <div class="contact-icon" aria-hidden="true">🏢</div>
+                            <div class="card-content">
+                                <h3>公司地址</h3>
+                                <p>北京市朝阳区创新科技园A座101室</p>
+                                <p>邮编: 100000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-form-section" aria-labelledby="form-title">
+                <div class="container">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div>
+                            <h2 id="form-title">发送消息</h2>
+                            <form class="contact-form" id="contactForm" aria-label="联系表单">
+                                <div class="form-group">
+                                    <label for="name">姓名 <span class="required" aria-label="必填">*</span></label>
+                                    <input type="text" id="name" name="name" required aria-describedby="name-error" aria-required="true">
+                                    <div class="error-message" id="name-error" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">邮箱 <span class="required" aria-label="必填">*</span></label>
+                                    <input type="email" id="email" name="email" required aria-describedby="email-error">
+                                    <div class="error-message" id="email-error" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="phone">电话</label>
+                                    <input type="tel" id="phone" name="phone" aria-describedby="phone-error">
+                                    <div class="error-message" id="phone-error" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">主题 <span class="required" aria-label="必填">*</span></label>
+                                    <select id="subject" name="subject" required aria-describedby="subject-error" aria-required="true">
+                                        <option value="">请选择</option>
+                                        <option value="general">一般咨询</option>
+                                        <option value="support">技术支持</option>
+                                        <option value="sales">销售咨询</option>
+                                        <option value="partnership">合作洽谈</option>
+                                        <option value="other">其他</option>
+                                    </select>
+                                    <div class="error-message" id="subject-error" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">消息内容 <span class="required" aria-label="必填">*</span></label>
+                                    <textarea id="message" name="message" rows="5" required aria-describedby="message-error" aria-required="true"></textarea>
+                                    <div class="error-message" id="message-error" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="consent" name="consent" required aria-describedby="consent-error">
+                                        <span>我同意接收来自PI Layout System的营销信息</span>
+                                        <span class="required" aria-label="必填">*</span>
+                                    </label>
+                                    <div class="error-message" id="consent-error" role="alert" aria-live="polite"></div>
+                                </div>
+                                
+                                <button type="submit" class="cta-button" aria-label="发送消息">发送消息</button>
+                            </form>
+                        </div>
+                        
+                        <div>
+                            <h2>我们的位置</h2>
+                            <div class="map-placeholder">
+                                <div class="placeholder-content">地图位置</div>
+                            </div>
+                            
+                            <div class="business-hours">
+                                <h3>营业时间</h3>
+                                <ul>
+                                    <li>周一至周五: 9:00 - 18:00</li>
+                                    <li>周六: 10:00 - 16:00</li>
+                                    <li>周日: 休息</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section" aria-labelledby="faq-title">
+                <div class="container">
+                    <h2 id="faq-title">常见问题</h2>
+                    <div class="faq-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="faq-item">
+                            <h3>你们的服务覆盖哪些地区？</h3>
+                            <p>我们的服务覆盖全球，主要服务地区包括中国、亚太、欧洲和北美地区。我们的团队具备多语言服务能力，可以为全球客户提供支持。</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>项目通常需要多长时间完成？</h3>
+                            <p>项目时间根据复杂程度而定，简单项目通常需要2-4周，复杂的企业级项目可能需要2-6个月。我们会在项目开始前提供详细的时间规划。</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>如何确保项目的质量？</h3>
+                            <p>我们有完善的质量保证体系，包括设计审查、代码审查、性能测试、可访问性测试和用户体验测试。每个项目都会经过多轮质量检查。</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>是否提供后期维护服务？</h3>
+                            <p>是的，我们提供全面的后期维护服务，包括安全更新、功能优化、性能监控和技术支持。我们建议客户购买年度维护服务以确保项目长期稳定运行。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">立即获得专业咨询</h2>
+                        <p id="cta-description">我们的专家团队随时准备为您解答疑问</p>
+                        <div class="cta-buttons">
+                            <a href="tel:4001234567" class="cta-button" aria-label="电话联系我们">电话咨询</a>
+                            <a href="/services" class="button secondary" aria-label="查看我们的服务">查看服务</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 联系表单验证
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取所有需要验证的字段
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            const consent = document.getElementById('consent');
+            
+            // 重置错误信息
+            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+            
+            let isValid = true;
+            
+            // 验证姓名
+            if (!name.value.trim()) {
+                document.getElementById('name-error').textContent = '请输入您的姓名';
+                isValid = false;
+            }
+            
+            // 验证邮箱
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                document.getElementById('email-error').textContent = '请输入有效的邮箱地址';
+                isValid = false;
+            }
+            
+            // 验证主题
+            if (!subject.value) {
+                document.getElementById('subject-error').textContent = '请选择主题';
+                isValid = false;
+            }
+            
+            // 验证消息内容
+            if (!message.value.trim()) {
+                document.getElementById('message-error').textContent = '请输入消息内容';
+                isValid = false;
+            }
+            
+            // 验证同意条款
+            if (!consent.checked) {
+                document.getElementById('consent-error').textContent = '请同意接收营销信息';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // 模拟表单提交
+                alert('消息已成功发送！我们将在24小时内回复您。');
+                this.reset();
+            }
+        });
+    </script>
+</body>
+</html>

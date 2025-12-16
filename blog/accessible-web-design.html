@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="了解如何设计和开发满足WCAG标准的网站，确保所有用户都能平等访问您的内容">
+    <title>创建可访问的网页布局 - 博客 - PI Layout System</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/breakpoints.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/accessibility.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/blog" role="menuitem" aria-current="page">博客</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="article-title">
+                <div class="container">
+                    <div class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a> > <a href="/blog">博客</a> > <span>创建可访问的网页布局</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog-article" aria-labelledby="article-title">
+                <div class="container">
+                    <header class="article-header">
+                        <h1 id="article-title">创建可访问的网页布局</h1>
+                        <div class="article-meta">
+                            <span class="article-date">2025年1月8日</span>
+                            <span class="article-category">可访问性</span>
+                            <span class="article-author">PI Layout Team</span>
+                            <span class="article-readtime">阅读时间: 9分钟</span>
+                        </div>
+                    </header>
+
+                    <div class="article-content">
+                        <div class="article-image">
+                            <div class="placeholder-image-large">可访问性设计图示</div>
+                        </div>
+                        <div class="article-body">
+                            <p>了解如何设计和开发满足WCAG标准的网站，确保所有用户都能平等访问您的内容。可访问性不仅是道德要求，也是法律义务，在许多国家和地区，网站必须满足特定的可访问性标准。</p>
+
+                            <h2>什么是Web可访问性</h2>
+                            <p>Web可访问性是指让所有人，包括有残疾的人士，都能有效使用Web的特性。当网站、工具和技术被设计得能够让残疾人访问和使用时，就认为是可访问的。</p>
+
+                            <h2>WCAG 2.1标准概述</h2>
+                            <p>Web内容可访问性指南(WCAG)2.1提供了创建可访问Web内容的国际标准。该指南基于四个原则，通常用首字母缩写POUR表示：</p>
+                            <ul>
+                                <li><strong>可感知（Perceivable）</strong>: 信息和用户界面组件必须以用户可以感知的方式呈现。</li>
+                                <li><strong>可操作（Operable）</strong>: 用户界面组件和导航必须是可操作的。</li>
+                                <li><strong>可理解（Understandable）</strong>: 信息和用户界面操作必须是可以理解的。</li>
+                                <li><strong>健壮（Robust）</strong>: 内容必须足够健壮，以便各种辅助技术能可靠地解释它。</li>
+                            </ul>
+
+                            <h2>语义化HTML的重要性</h2>
+                            <p>使用正确的HTML元素是创建可访问网站的基础。语义化HTML为辅助技术提供有意义的信息，帮助它们理解页面结构和内容。</p>
+
+                            <pre><code>&lt;!-- 好的例子：使用语义化HTML --&gt;
+&lt;header&gt;
+  &lt;nav role="navigation"&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="/"&gt;首页&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+  &lt;h1&gt;页面标题&lt;/h1&gt;
+  &lt;h2&gt;章节标题&lt;/h2&gt;
+  &lt;article&gt;
+    &lt;p&gt;文章内容&lt;/p&gt;
+  &lt;/article&gt;
+&lt;/main&gt;</code></pre>
+
+                            <h3>色彩对比度要求</h3>
+                            <p>为确保视力受限的用户能清楚阅读内容，WCAG 2.1规定了最低对比度要求：</p>
+                            <ul>
+                                <li>普通文本至少需要4.5:1的对比度</li>
+                                <li>大于18pt（或粗体大于14pt）的大文本至少需要3:1的对比度</li>
+                            </ul>
+
+                            <h3>键盘导航</h3>
+                            <p>所有交互式元素都必须能够通过键盘操作，这是确保无法使用鼠标的用户能够导航和与网站互动的关键。良好的键盘导航应该遵循逻辑顺序，并提供清晰的焦点指示器。</p>
+
+                            <div class="article-callout">
+                                <h3>关键要点</h3>
+                                <ul>
+                                    <li>遵循WCAG 2.1指南</li>
+                                    <li>使用语义化HTML标签</li>
+                                    <li>确保充足的色彩对比度</li>
+                                    <li>支持键盘导航</li>
+                                    <li>为非文本内容提供替代文本</li>
+                                    <li>明确标识链接的目的</li>
+                                </ul>
+                            </div>
+
+                            <h2>ARIA标签的应用</h2>
+                            <p>可访问的富互联网应用程序(ARIA)为HTML元素添加额外的语义信息，帮助辅助技术更好地理解页面内容。然而，只有在HTML本身不能充分传达含义时才使用ARIA。</p>
+
+                            <h2>测试可访问性</h2>
+                            <p>使用自动化工具和手动测试相结合的方式评估网站的可访问性。常用工具包括axe DevTools、WAVE和屏幕阅读器测试（如NVDA或VoiceOver）。</p>
+
+                            <h2>结论</h2>
+                            <p>可访问性的设计和开发不仅有助于残疾人用户，还能改善全体用户的体验。它还可以提高SEO效果，扩大网站受众，降低法律风险。将可访问性融入开发流程的早期阶段是最有效的做法。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social-sharing" aria-labelledby="share-title">
+                <div class="container">
+                    <h2 id="share-title" class="sr-only">分享文章</h2>
+                    <div class="social-share">
+                        <button class="social-btn wechat" aria-label="分享到微信">WX</button>
+                        <button class="social-btn weibo" aria-label="分享到微博">WB</button>
+                        <button class="social-btn linkedin" aria-label="分享到LinkedIn">IN</button>
+                        <button class="social-btn twitter" aria-label="分享到Twitter">TT</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="related-articles" aria-labelledby="related-title">
+                <div class="container">
+                    <h2 id="related-title">相关文章</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <article class="post-card card" role="article">
+                            <div class="card-content">
+                                <div class="post-meta">
+                                    <span class="post-category">技术趋势</span>
+                                    <span class="post-date">2025年1月15日</span>
+                                </div>
+                                <h3>2025年网页布局设计趋势预测</h3>
+                                <p>深入了解2025年网页布局设计的最新趋势...</p>
+                                <a href="/blog/2025-layout-trends.html" class="read-more">阅读更多 ›</a>
+                            </div>
+                        </article>
+                        <article class="post-card card" role="article">
+                            <div class="card-content">
+                                <div class="post-meta">
+                                    <span class="post-category">开发</span>
+                                    <span class="post-date">2025年1月12日</span>
+                                </div>
+                                <h3>现代CSS布局技术详解</h3>
+                                <p>深入了解Flexbox、Grid和多列布局的高级应用...</p>
+                                <a href="/blog/modern-css-layouts.html" class="read-more">阅读更多 ›</a>
+                            </div>
+                        </article>
+                        <article class="post-card card" role="article">
+                            <div class="card-content">
+                                <div class="post-meta">
+                                    <span class="post-category">设计</span>
+                                    <span class="post-date">2025年1月10日</span>
+                                </div>
+                                <h3>响应式设计最佳实践</h3>
+                                <p>探讨如何为不同设备创建出色的用户体验...</p>
+                                <a href="/blog/responsive-design-best-practices.html" class="read-more">阅读更多 ›</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="comments-section" aria-labelledby="comments-title">
+                <div class="container">
+                    <h2 id="comments-title">发表评论</h2>
+                    <form class="comment-form" aria-label="评论表单">
+                        <div class="form-group">
+                            <label for="comment-name">姓名</label>
+                            <input type="text" id="comment-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-email">邮箱</label>
+                            <input type="email" id="comment-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment-content">评论</label>
+                            <textarea id="comment-content" name="content" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="button">发表评论</button>
+                    </form>
+
+                    <div class="comments-list">
+                        <h3>已有评论</h3>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <span class="comment-author">周九</span>
+                                <span class="comment-date">2025年1月9日</span>
+                            </div>
+                            <p class="comment-content">很好的可访问性指南，我们公司在实施WCAG标准时很有帮助。</p>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-header">
+                                <span class="comment-author">吴十</span>
+                                <span class="comment-date">2025年1月10日</span>
+                            </div>
+                                <p class="comment-content">对比度要求部分特别重要，我们经常忽略这个问题。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">想了解更多可访问性信息？</h2>
+                        <p id="cta-description">订阅我们的博客，获取最新可访问性指南和最佳实践</p>
+                        <div class="cta-buttons">
+                            <a href="/blog" class="button secondary">查看所有文章</a>
+                            <a href="/contact" class="cta-button">订阅更新</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/images.js"></script>
+    <script src="../js/keyboard-nav.js"></script>
+    <script src="../js/accessibility-checker.js"></script>
+    <script src="../js/performance.js"></script>
+    <script src="../js/transitions.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* 确保颜色对比度符合WCAG AA标准 */
+
+/* WCAG AA 标准要求：
+   - 正常文本: 至少 4.5:1
+   - 大文本(18pt/24px+): 至少 3:1
+*/
+
+/* 对比度合规的颜色组合 */
+:root {
+  /* 主要文本颜色组合 - 符合AA标准 */
+  --text-on-primary: white; /* 在主色上的白色文本 */
+  --text-on-accent: white; /* 在强调色上的白色文本 */
+  --text-on-light: var(--text-primary); /* 在浅色背景上的深色文本 */
+  --text-on-dark: white; /* 在深色背景上的白色文本 */
+  
+  /* 调整后的颜色以满足对比度要求 */
+  --accessible-primary: #2e40c6; /* 调整深一点以满足对比度 */
+  --accessible-secondary: #2a26a3; /* 调整深一点以满足对比度 */
+  --accessible-accent: #d6006d; /* 调整深一点以满足对比度 */
+  
+  /* 专门为文本定义的高对比度颜色 */
+  --high-contrast-text: #212121; /* 深灰色，比黑色柔和但对比度高 */
+  --light-text-on-dark: #e0e0e0; /* 浅灰色，用于深色背景 */
+  
+  /* 状态颜色 - 符合AA标准 */
+  --success-accessible: #2e7d32; /* 绿色 - 成功状态 */
+  --warning-accessible: #f57c00; /* 橙色 - 警告状态 */
+  --error-accessible: #d32f2f;   /* 红色 - 错误状态 */
+}
+
+/* 确保文本和背景的对比度 */
+body {
+  color: var(--text-primary);
+  background-color: var(--background-color);
+}
+
+/* 链接颜色对比度 */
+a {
+  color: var(--primary-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--secondary-color);
+}
+
+/* 按钮文本对比度 */
+.button,
+.cta-button {
+  color: white;
+}
+
+.button.outline,
+.button.text {
+  color: var(--primary-color);
+}
+
+/* 特定背景上的文字颜色 */
+.bg-primary * {
+  color: var(--text-on-primary) !important;
+}
+
+.bg-accent * {
+  color: var(--text-on-primary) !important;
+}
+
+.bg-dark * {
+  color: var(--text-on-primary) !important;
+}
+
+.bg-light * {
+  color: var(--text-on-light) !important;
+}
+
+/* 语义化颜色类 - 符合对比度标准 */
+.text-success { color: var(--success-accessible) !important; }
+.text-warning { color: var(--warning-accessible) !important; }
+.text-error { color: var(--error-accessible) !important; }
+
+.bg-success { background-color: var(--success-accessible) !important; color: white !important; }
+.bg-warning { background-color: var(--warning-accessible) !important; color: white !important; }
+.bg-error { background-color: var(--error-accessible) !important; color: white !important; }
+
+/* 对比度测试工具类（开发时使用） */
+.contrast-test {
+  padding: var(--spacing-md);
+  margin: var(--spacing-sm);
+  border-radius: var(--border-radius-md);
+}
+
+/* 提供足够的对比度的辅助类 */
+.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+
+.low-contrast {
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+/* 确保焦点状态的可见性 - 符合无障碍标准 */
+*:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* 确保表单元素的对比度 */
+input,
+textarea,
+select {
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  background-color: var(--background-color);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+
+/* 响应式对比度 */
+@media (prefers-contrast: high) {
+  :root {
+    --border-color: #000;
+    --text-primary: #000;
+    --background-color: #fff;
+  }
+  
+  .bg-dark {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  
+  .bg-light {
+    background-color: #fff !important;
+    color: #000 !important;
+  }
+}

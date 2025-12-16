@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PI Layout System - 获取帮助和支持，查找常见问题解答，联系技术支持">
+    <title>帮助与支持 - PI Layout System</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/breakpoints.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body>
+    <header class="navbar" role="banner">
+        <nav class="container" role="navigation" aria-label="主导航">
+            <div class="logo">
+                <a href="/" aria-label="返回首页">PI Layout</a>
+            </div>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="/" role="menuitem">首页</a></li>
+                <li role="none"><a href="/products" role="menuitem">产品</a></li>
+                <li role="none"><a href="/services" role="menuitem">服务</a></li>
+                <li role="none"><a href="/about" role="menuitem">关于</a></li>
+                <li role="none"><a href="/contact" role="menuitem">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="page-header" aria-labelledby="page-title">
+                <div class="container">
+                    <div class="breadcrumb" aria-label="面包屑导航">
+                        <a href="/">首页</a> > <span>帮助与支持</span>
+                    </div>
+                    <h1 id="page-title">帮助与支持</h1>
+                    <p>找到答案，获取支持，提升您的使用体验</p>
+                </div>
+            </section>
+
+            <section class="search-section" aria-labelledby="search-title">
+                <div class="container">
+                    <div class="search-container">
+                        <h2 id="search-title" class="sr-only">搜索帮助文档</h2>
+                        <div class="search-box-full">
+                            <input type="text" id="help-search" placeholder="输入关键词搜索帮助文档..." aria-label="搜索帮助文档">
+                            <button type="submit" aria-label="搜索">🔍</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-options" aria-labelledby="options-title">
+                <div class="container">
+                    <h2 id="options-title" class="text-center mb-10">我们如何帮助您</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="support-card card" role="article">
+                            <div class="support-icon" aria-hidden="true">📚</div>
+                            <div class="card-content text-center">
+                                <h3>文档中心</h3>
+                                <p>详尽的产品文档、API参考和教程，帮助您快速上手并掌握我们的产品。</p>
+                                <a href="/docs" class="button mt-4">查看文档</a>
+                            </div>
+                        </div>
+                        
+                        <div class="support-card card" role="article">
+                            <div class="support-icon" aria-hidden="true">💬</div>
+                            <div class="card-content text-center">
+                                <h3>实时聊天</h3>
+                                <p>与我们的技术支持专家实时交流，快速解决问题，工作日 9:00-18:00。</p>
+                                <button class="button mt-4">开始聊天</button>
+                            </div>
+                        </div>
+                        
+                        <div class="support-card card" role="article">
+                            <div class="support-icon" aria-hidden="true">📞</div>
+                            <div class="card-content text-center">
+                                <h3>电话支持</h3>
+                                <p>对于紧急问题，您可以直接电话联系我们的技术支持团队。</p>
+                                <a href="tel:4001234567" class="button mt-4">400-123-4567</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-section" aria-labelledby="faq-title">
+                <div class="container">
+                    <h2 id="faq-title" class="text-center mb-10">常见问题</h2>
+                    
+                    <div class="faq-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="faq-item" role="tabpanel">
+                            <button class="faq-question" role="tab" aria-expanded="false" aria-controls="faq1-content">
+                                <span>如何开始使用PI Layout System？</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq1-content" role="tabpanel">
+                                <p>您可以通过以下步骤开始使用我们的系统：</p>
+                                <ol>
+                                    <li>注册账户并登录</li>
+                                    <li>选择适合您的订阅计划</li>
+                                    <li>下载并安装布局系统</li>
+                                    <li>参考我们的入门指南</li>
+                                    <li>开始创建您的项目</li>
+                                </ol>
+                                <a href="/docs/getting-started" class="button small">查看详细指南</a>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item" role="tabpanel">
+                            <button class="faq-question" role="tab" aria-expanded="false" aria-controls="faq2-content">
+                                <span>支持哪些浏览器？</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq2-content" role="tabpanel">
+                                <p>我们的布局系统支持所有现代浏览器：</p>
+                                <ul>
+                                    <li>Chrome 70+</li>
+                                    <li>Firefox 65+</li>
+                                    <li>Safari 12+</li>
+                                    <li>Edge 79+</li>
+                                    <li>Opera 60+</li>
+                                </ul>
+                                <p>我们推荐使用最新版本的浏览器以获得最佳体验。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item" role="tabpanel">
+                            <button class="faq-question" role="tab" aria-expanded="false" aria-controls="faq3-content">
+                                <span>如何获得技术支持？</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq3-content" role="tabpanel">
+                                <p>您可以通过多种方式获得技术支持：</p>
+                                <ul>
+                                    <li>实时聊天：工作日 9:00-18:00</li>
+                                    <li>电子邮件：support@pilayout.com</li>
+                                    <li>电话：400-123-4567</li>
+                                    <li>提交工单：通过客户中心提交</li>
+                                </ul>
+                                <p>响应时间：普通问题12小时内回复，紧急问题1小时内回复。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item" role="tabpanel">
+                            <button class="faq-question" role="tab" aria-expanded="false" aria-controls="faq4-content">
+                                <span>是否支持自定义设计？</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq4-content" role="tabpanel">
+                                <p>是的，我们的系统完全支持自定义设计：</p>
+                                <ul>
+                                    <li>自定义颜色方案</li>
+                                    <li>自定义组件样式</li>
+                                    <li>自定义布局结构</li>
+                                    <li>品牌化定制</li>
+                                    <li>CSS变量自定义</li>
+                                </ul>
+                                <p>您可以根据品牌需求完全定制系统外观。</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item" role="tabpanel">
+                            <button class="faq-question" role="tab" aria-expanded="false" aria-controls="faq5-content">
+                                <span>如何更新到最新版本？</span>
+                                <span class="accordion-icon">+</span>
+                            </button>
+                            <div class="faq-answer" id="faq5-content" role="tabpanel">
+                                <p>更新到最新版本非常简单：</p>
+                                <ol>
+                                    <li>登录客户中心</li>
+                                    <li>下载最新版本</li>
+                                    <li>按照更新指南操作</li>
+                                    <li>测试您的项目</li>
+                                    <li>完成更新</li>
+                                </ol>
+                                <p>建议在更新前备份您的项目。我们通常每月发布一次更新。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resources-section" aria-labelledby="resources-title">
+                <div class="container">
+                    <h2 id="resources-title" class="text-center mb-10">帮助资源</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <a href="/docs" class="resource-card card" role="article">
+                            <div class="resource-icon" aria-hidden="true">📖</div>
+                            <div class="card-content">
+                                <h3>产品文档</h3>
+                                <p>全面的使用说明和API参考</p>
+                            </div>
+                        </a>
+                        
+                        <a href="/tutorials" class="resource-card card" role="article">
+                            <div class="resource-icon" aria-hidden="true">🎥</div>
+                            <div class="card-content">
+                                <h3>视频教程</h3>
+                                <p>详细的步骤演示和使用技巧</p>
+                            </div>
+                        </a>
+                        
+                        <a href="/community" class="resource-card card" role="article">
+                            <div class="resource-icon" aria-hidden="true">👥</div>
+                            <div class="card-content">
+                                <h3>社区论坛</h3>
+                                <p>与其他用户交流经验和技巧</p>
+                            </div>
+                        </a>
+                        
+                        <a href="/api-reference" class="resource-card card" role="article">
+                            <div class="resource-icon" aria-hidden="true">⚙️</div>
+                            <div class="card-content">
+                                <h3>API参考</h3>
+                                <p>详细的API文档和代码示例</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="support-packages" aria-labelledby="packages-title">
+                <div class="container">
+                    <h2 id="packages-title" class="text-center mb-10">支持套餐</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="support-package card text-center">
+                            <div class="package-header">
+                                <h3>基础支持</h3>
+                                <div class="package-price">免费</div>
+                            </div>
+                            <ul class="package-features">
+                                <li>社区支持</li>
+                                <li>文档访问</li>
+                                <li>每周更新</li>
+                                <li>标准SLA</li>
+                            </ul>
+                            <a href="/docs" class="button mt-6">获取支持</a>
+                        </div>
+                        
+                        <div class="support-package card text-center featured">
+                            <div class="popular-tag">最受欢迎</div>
+                            <div class="package-header">
+                                <h3>标准支持</h3>
+                                <div class="package-price">¥999/年</div>
+                            </div>
+                            <ul class="package-features">
+                                <li>邮件技术支持</li>
+                                <li>视频会议指导</li>
+                                <li>优先更新</li>
+                                <li>高级SLA</li>
+                                <li>定制化咨询</li>
+                            </ul>
+                            <a href="/contact" class="button mt-6">购买</a>
+                        </div>
+                        
+                        <div class="support-package card text-center">
+                            <div class="package-header">
+                                <h3>企业支持</h3>
+                                <div class="package-price">¥4999/年</div>
+                            </div>
+                            <ul class="package-features">
+                                <li>24/7技术支持</li>
+                                <li>专属技术顾问</li>
+                                <li>现场培训</li>
+                                <li>定制开发</li>
+                                <li>SLA保证</li>
+                                <li>应急响应</li>
+                            </ul>
+                            <a href="/contact" class="button mt-6">购买</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" aria-labelledby="cta-title" aria-describedby="cta-description">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2 id="cta-title">需要更多帮助？</h2>
+                        <p id="cta-description">我们的专家团队随时准备为您解答疑问</p>
+                        <a href="/contact" class="cta-button" aria-label="联系技术支持">联系技术支持</a>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 PI Layout System. 版权所有.</p>
+            <nav aria-label="页脚导航">
+                <ul class="nav-menu">
+                    <li><a href="/privacy">隐私政策</a></li>
+                    <li><a href="/terms">使用条款</a></li>
+                    <li><a href="/sitemap">站点地图</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="js/images.js"></script>
+    <script src="js/keyboard-nav.js"></script>
+    <script src="js/accessibility-checker.js"></script>
+    <script src="js/performance.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ 手风琴功能
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                // 关闭所有其他面板
+                document.querySelectorAll('.faq-question').forEach(btn => {
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.nextElementSibling.style.display = 'none';
+                    btn.querySelector('.accordion-icon').textContent = '+';
+                });
+                
+                // 切换当前面板
+                if (isExpanded) {
+                    this.setAttribute('aria-expanded', 'false');
+                    content.style.display = 'none';
+                    this.querySelector('.accordion-icon').textContent = '+';
+                } else {
+                    this.setAttribute('aria-expanded', 'true');
+                    content.style.display = 'block';
+                    this.querySelector('.accordion-icon').textContent = '−';
+                }
+            });
+        });
+        
+        // 初始化手风琴内容
+        document.querySelectorAll('.faq-answer').forEach(answer => {
+            answer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
