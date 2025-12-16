@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoSwitch™ Series - Technical Details | LiTong Group</title>
+    <meta name="description" content="Detailed technical information about Power Integrations' InnoSwitch™ series AC-DC converter ICs, featuring FluxLink™ technology and high integration for efficient and compact power supply designs.">
+    <meta name="keywords" content="InnoSwitch, InnoSwitch3-Pro, InnoSwitch3-CP, InnoSwitch3-EP, InnoSwitch3-CE, PI AC-DC, Power Integrations, technical details, LiTong Group">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <style>
+        .product-description {
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        .product-description h2 {
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .product-description p {
+            margin-bottom: 15px;
+        }
+        .selection-guide-link {
+            display: block;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .distributor-review {
+            background-color: var(--primary-light);
+            padding: 20px;
+            border-left: 5px solid var(--primary-color);
+            margin: 30px 0;
+            font-style: italic;
+        }
+        .product-table-container {
+            overflow-x: auto;
+            margin-top: 30px;
+        }
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        .product-table th, .product-table td {
+            border: 1px solid var(--border-color);
+            padding: 10px;
+            text-align: left;
+            white-space: nowrap; /* Prevent text wrapping in table headers/cells */
+        }
+        .product-table th {
+            background-color: var(--neutral-medium);
+            cursor: pointer; /* Indicate sortable/filterable columns */
+        }
+        .product-table tr:nth-child(even) {
+            background-color: var(--neutral-light);
+        }
+        .product-table tr:hover {
+            background-color: var(--primary-light);
+        }
+        .product-table .filter-input {
+            width: 80%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-sm);
+        }
+        .cta-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .cta-group .btn-primary, .cta-group .btn-secondary {
+            flex-grow: 1;
+            max-width: 250px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .cta-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cta-group .btn-primary, .cta-group .btn-secondary {
+                max-width: 100%;
+            }
+        }
+        .technical-specs {
+            background-color: var(--text-light);
+            padding: 25px;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow);
+            margin: 20px 0;
+        }
+        .spec-category {
+            margin-bottom: 30px;
+        }
+        .spec-category h3 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .spec-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+        .spec-item:last-child {
+            border-bottom: none;
+        }
+        .spec-name {
+            font-weight: var(--font-weight-semibold);
+            color: var(--neutral-dark);
+        }
+        .spec-value {
+            color: var(--primary-color);
+            font-weight: var(--font-weight-medium);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">LiTong Group</a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/solutions">Solutions</a></li>
+                <li><a href="/support">Technical Support</a></li>
+                <li><a href="/news">News Center</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/products">Products</a></li>
+                <li class="breadcrumb-item"><a href="/products/ac-dc">AC-DC Conversion</a></li>
+                <li class="breadcrumb-item"><a href="/products/ac-dc/innoswitch">InnoSwitch™ Series</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Technical Details</li>
+            </ol>
+        </nav>
+
+        <h1>Power Integrations InnoSwitch™ Series - Technical Deep Dive</h1>
+
+        <div class="product-description">
+            <p>This comprehensive guide provides detailed technical specifications and design considerations for Power Integrations' InnoSwitch™ series of AC-DC converter ICs. These highly integrated devices are designed for applications requiring high efficiency, compact size, and robust reliability.</p>
+            
+            <div class="distributor-review">
+                <p><strong>LiTong FAE Review:</strong> "The InnoSwitch series represents the pinnacle of integrated power conversion technology. The FluxLink feedback mechanism provides exceptional accuracy while eliminating the reliability issues associated with optocouplers. For our customers designing USB-PD chargers or industrial power supplies, these devices offer a compelling solution with reduced component count and improved performance."</p>
+            </div>
+        </div>
+
+        <h2>Advanced Features & Technology</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <div class="feature-icon">🔄</div>
+                <h3>FluxLink™ Feedback Technology</h3>
+                <p>Primary-side sensing and control technology that eliminates the need for an optocoupler while providing tight output voltage regulation.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h3>Integrated Power MOSFET</h3>
+                <p>High-voltage power MOSFET integrated in the same package with the controller, reducing PCB area and component count.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h3>Advanced Protection</h3>
+                <p>Integrated protection features including OVP, OTP, OCP, and HVP for robust operation under fault conditions.</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔄</div>
+                <h3>Synchronous Rectification</h3>
+                <p>Integrated secondary-side synchronous rectification controller for high-efficiency operation.</p>
+            </div>
+        </div>
+
+        <div class="technical-specs">
+            <h2>Technical Specifications by Series</h2>
+            
+            <div class="spec-category">
+                <h3>InnoSwitch3-Pro Series</h3>
+                <div class="spec-item">
+                    <span class="spec-name">Input Voltage Range</span>
+                    <span class="spec-value">85-265 VAC (Universal)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Power</span>
+                    <span class="spec-value">Up to 100W</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Regulation</span>
+                    <span class="spec-value">±3% (CC), ±5% (CV)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Control Method</span>
+                    <span class="spec-value">Primary-side regulation with I2C-programmable outputs</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Key Applications</span>
+                    <span class="spec-value">USB-PD, Multi-adapter, EV charging</span>
+                </div>
+            </div>
+            
+            <div class="spec-category">
+                <h3>InnoSwitch3-CP Series</h3>
+                <div class="spec-item">
+                    <span class="spec-name">Input Voltage Range</span>
+                    <span class="spec-value">85-265 VAC (Universal)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Power</span>
+                    <span class="spec-value">Up to 75W (Constant Power)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Power Regulation</span>
+                    <span class="spec-value">±5% Constant Power</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Control Method</span>
+                    <span class="spec-value">Primary-side regulation with constant power control</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Key Applications</span>
+                    <span class="spec-value">USB-PD, Low-cost chargers</span>
+                </div>
+            </div>
+            
+            <div class="spec-category">
+                <h3>InnoSwitch3-EP Series</h3>
+                <div class="spec-item">
+                    <span class="spec-name">Input Voltage Range</span>
+                    <span class="spec-value">85-265 VAC (Universal)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Power</span>
+                    <span class="spec-value">Up to 90W</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Regulation</span>
+                    <span class="spec-value">±3% (CC), ±5% (CV)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Control Method</span>
+                    <span class="spec-value">Primary-side regulation with enhanced features</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Key Applications</span>
+                    <span class="spec-value">Industrial, Appliance, High-efficiency adapters</span>
+                </div>
+            </div>
+            
+            <div class="spec-category">
+                <h3>InnoSwitch4 Series</h3>
+                <div class="spec-item">
+                    <span class="spec-name">Input Voltage Range</span>
+                    <span class="spec-value">85-265 VAC (Universal)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Power</span>
+                    <span class="spec-value">Up to 150W</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Output Regulation</span>
+                    <span class="spec-value">±3% (CC), ±5% (CV)</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Control Method</span>
+                    <span class="spec-value">Primary-side regulation with ZVS technology</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-name">Key Applications</span>
+                    <span class="spec-value">High-power chargers, Industrial, Lighting</span>
+                </div>
+            </div>
+        </div>
+
+        <h2>Design Considerations</h2>
+        <div class="product-description">
+            <h3>Thermal Management</h3>
+            <p>Proper thermal management is crucial for reliable operation of InnoSwitch devices. The integrated power MOSFET generates heat during operation, which must be dissipated through the PCB copper and heatsinking. PI recommends using thermal vias under the exposed thermal pad and ensuring adequate copper area to manage junction temperature.</p>
+            
+            <h3>EMI Considerations</h3>
+            <p>The InnoSwitch series incorporates spread spectrum frequency modulation and soft-switching techniques to minimize EMI. However, proper PCB layout and filtering components are still necessary to meet stringent EMI standards. PI provides detailed layout guidelines in their application notes.</p>
+            
+            <h3>Startup and Protection Features</h3>
+            <p>These devices feature soft-start to reduce inrush current, integrated protection against overvoltages and overtemperatures, and auto-recovery for most fault conditions. The protection thresholds are factory-set and do not require external adjustments.</p>
+        </div>
+
+        <h2>Application Circuits</h2>
+        <p>Below is a generic application circuit for InnoSwitch devices. For specific applications and optimized designs, please refer to Power Integrations' design tools and application notes:</p>
+        
+        <div class="card">
+            <h3>Basic InnoSwitch Application Circuit</h3>
+            <div class="card-content">
+                <p>The basic InnoSwitch circuit includes:</p>
+                <ul>
+                    <li>Input rectification and filtering</li>
+                    <li>InnoSwitch device with external components</li>
+                    <li>Transformer with primary, secondary, and bias windings</li>
+                    <li>Secondary rectification and output filtering</li>
+                    <li>Input bias supply for startup</li>
+                </ul>
+                <p>Component values are application-specific and should be determined using PI's design tools like PI Expert or by consulting application notes.</p>
+            </div>
+        </div>
+
+        <h2>Alternative & Matching Part Numbers</h2>
+        <p>For applications requiring different specifications, consider these alternatives:</p>
+        <div class="card">
+            <h3>Related Power Integrations Products</h3>
+            <div class="card-content">
+                <ul>
+                    <li><strong>TOPSwitch Family:</strong> For lower-power designs requiring similar integration</li>
+                    <li><strong>LinkSwitch Family:</strong> For isolated and non-isolated offline regulator applications</li>
+                    <li><strong>SCALE-iFlex Gate Drivers:</strong> For driving external MOSFETs in higher-power applications</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="faq-section">
+            <h2>Technical FAQs</h2>
+            <div class="faq-item">
+                <h3>Q: How does FluxLink™ technology compare to traditional optocoupler feedback?</h3>
+                <p>A: FluxLink™ provides superior reliability by eliminating the optocoupler's LED and photodetector, which are common failure points. It also provides faster response times and better regulation accuracy with less component variation over time and temperature.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q: What is the difference between InnoSwitch3-EP and InnoSwitch3-CE?</h3>
+                <p>A: InnoSwitch3-EP (Enhanced Performance) is optimized for general-purpose applications with a focus on performance. InnoSwitch3-CE (Charger Efficiency) is specifically optimized for charger applications to meet specific efficiency standards.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q: Can InnoSwitch devices be used in Constant Current applications?</h3>
+                <p>A: Yes, InnoSwitch devices provide constant current regulation through primary-side control without requiring secondary-side feedback. The current limit is programmable through external resistors.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q: What packages are available for InnoSwitch devices?</h3>
+                <p>A: InnoSwitch devices are available in InSOP-24C packages, which provide excellent thermal performance and are designed for surface-mount assembly with a gull-wing pin configuration to enhance reliability.</p>
+            </div>
+        </section>
+
+        <div class="selection-guide-link">
+            <a href="/support/guides/pi-expert-tutorials" class="btn-primary">PI Expert Design Tool Guide</a>
+        </div>
+
+        <div class="cta-group">
+            <a href="#" class="btn-primary">Download Detailed Datasheet</a>
+            <a href="#" class="btn-primary">Request Sample</a>
+            <a href="/contact-us" class="btn-primary">Get a Quote</a>
+            <a href="/contact-us" class="btn-secondary">Consult Technical Issues</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About LiTong Group</h3>
+                <p>Your trusted partner for Power Integrations products and solutions.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/solutions">Solutions</a></li>
+                    <li><a href="/support">Technical Support</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@elec-distributor.com</p>
+                <p>WhatsApp: +86 15013702378</p>
+                <p>WeChat: +86 18612518271</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 LiTong Group. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

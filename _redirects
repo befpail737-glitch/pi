@@ -1,0 +1,21 @@
+# Cloudflare Pages Redirects Configuration
+# This file ensures clean URLs work correctly
+
+# Handle root product/solution/news/support paths
+/products /products/index.html 200
+/solutions /solutions/index.html 200
+/news /news/index.html 200
+/support /support/index.html 200
+/about-us /about-us/index.html 200
+/contact-us /contact-us/index.html 200
+/faq /faq/index.html 200
+
+# Handle product category paths
+/products/ac-dc /products/ac-dc/index.html 200
+/products/gate-drivers /products/gate-drivers/index.html 200
+/products/led-drivers /products/led-drivers/index.html 200
+/products/motor-drivers /products/motor-drivers/index.html 200
+
+# Handle news category paths
+/news/company /news/company/index.html 200
+/news/industry /news/industry/index.html 200
