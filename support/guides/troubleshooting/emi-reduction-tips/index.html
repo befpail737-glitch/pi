@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Reduction Techniques for Power Integrations Designs | LiTong Group</title>
+    <meta name="description" content="Learn practical tips and best practices for minimizing electromagnetic interference (EMI) in power supply circuits designed with Power Integrations' ICs.">
+    <meta name="keywords" content="EMI reduction, EMC, power supply design, troubleshooting, Power Integrations, LiTong Group">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <style>
+        /* Specific styles for Article Detail Page */
+        .article-content {
+            line-height: 1.8;
+            margin-top: 30px;
+        }
+        .article-content h2 {
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+        .article-content h3 {
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .article-content p {
+            margin-bottom: 15px;
+        }
+        .article-content ul, .article-content ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .author-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-left: 5px solid #007bff;
+            border-radius: 0 8px 8px 0;
+        }
+        .author-info h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #0056b3;
+        }
+        .author-info p {
+            margin-bottom: 5px;
+        }
+        .author-info a {
+            font-weight: bold;
+        }
+        .related-articles {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .related-articles h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .related-articles ul {
+            list-style: none;
+            padding: 0;
+        }
+        .related-articles ul li {
+            margin-bottom: 10px;
+        }
+        .related-articles ul li a {
+            font-size: 16px;
+            color: #007bff;
+        }
+        .cta-final {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #e9f5ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta-final h2 {
+            font-size: 28px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">LiTong Group</a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/solutions">Solutions</a></li>
+                <li><a href="/support">Technical Support</a></li>
+                <li><a href="/news">News Center</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/support">Technical Support</a></li>
+                <li class="breadcrumb-item"><a href="/support/guides/troubleshooting">Troubleshooting</a></li>
+                <li class="breadcrumb-item active" aria-current="page">EMI Reduction Techniques</li>
+            </ol>
+        </nav>
+
+        <h1>EMI Reduction Techniques for Power Integrations Designs</h1>
+
+        <div class="article-content">
+            <p>Electromagnetic Interference (EMI) is a critical concern in power supply design, impacting system performance, reliability, and regulatory compliance. This guide provides practical tips and best practices for minimizing EMI in power supply circuits designed with Power Integrations' ICs, helping you achieve robust and compliant designs.</p>
+
+            <h2>1. Understanding EMI in Switching Power Supplies</h2>
+            <p>Switching power supplies inherently generate high-frequency noise due to rapid switching transitions of voltage and current. This noise can propagate through conduction (conducted EMI) or radiation (radiated EMI). Effective EMI reduction involves minimizing the generation of noise and preventing its propagation.</p>
+            <img src="../../../../images/support/emi-sources.png" alt="Sources of EMI in Switching Power Supplies">
+            <p><em>Figure 1: Common sources of EMI in switching power supplies.</em></p>
+
+            <h2>2. PCB Layout Optimization</h2>
+            <p>PCB layout is the single most critical factor in EMI reduction. A well-designed layout can significantly reduce EMI without adding costly components.</p>
+            <h3>2.1. Minimize High-Current Loop Areas</h3>
+            <p>Identify and minimize the area of high-frequency current loops, especially the primary switching loop (input capacitor, primary winding, MOSFET/IC). Smaller loop areas reduce radiated EMI.</p>
+            <h3>2.2. Proper Grounding</h3>
+            <p>Implement a solid ground plane or a star-grounding scheme. Separate noisy power grounds from quiet signal grounds. Ensure low-impedance connections to ground for all components.</p>
+            <h3>2.3. Short and Wide Traces</h3>
+            <p>Use short and wide traces for high-current and high-frequency paths to minimize parasitic inductance and resistance. Avoid sharp 90-degree bends in traces.</p>
+            <h3>2.4. Component Placement</h3>
+            <p>Place critical components (e.g., input capacitors, snubber components) as close as possible to the switching IC to minimize trace lengths and loop areas.</p>
+
+            <h2>3. Snubber Circuits</h2>
+            <p>Snubber circuits are used to suppress voltage spikes and ringing, which are significant sources of EMI.</p>
+            <h3>3.1. Primary-Side Snubber (RCD Snubber)</h3>
+            <p>An RCD snubber across the primary switch (MOSFET/IC) can absorb energy from leakage inductance, reducing voltage spikes and associated EMI. Optimize R, C, and D values for effective damping.</p>
+            <h3>3.2. Secondary-Side Snubber (RC Snubber)</h3>
+            <p>An RC snubber across the secondary rectifier diode can reduce high-frequency ringing caused by parasitic capacitance and inductance, improving EMI performance and reducing diode stress.</p>
+
+            <h2>4. Filtering Components</h2>
+            <p>External filters can be used to attenuate conducted EMI.</p>
+            <h3>4.1. Common Mode Chokes (CMC)</h3>
+            <p>Place a common mode choke on the AC input lines to suppress common mode noise. Select a CMC with appropriate inductance and current rating.</p>
+            <h3>4.2. X and Y Capacitors</h3>
+            <p>X-capacitors (line-to-line) and Y-capacitors (line-to-ground) are essential for filtering differential and common mode noise, respectively. Ensure Y-capacitors are safety-rated.</p>
+
+            <h2>5. Power Integrations' Integrated Features</h2>
+            <p>Many Power Integrations' ICs include features that inherently help with EMI reduction:</p>
+            <ul>
+                <li>**Frequency Jittering:** Spreads the switching noise spectrum, making it easier to filter.</li>
+                <li>**Soft Switching:** Reduces switching losses and EMI by minimizing voltage and current overlap during transitions.</li>
+                <li>**Integrated MOSFET:** Reduces parasitic inductances associated with external MOSFETs.</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>Effective EMI reduction in power supply designs is a multi-faceted task that combines careful PCB layout, strategic use of snubber circuits, appropriate filtering components, and leveraging the inherent EMI-reducing features of Power Integrations' ICs. By implementing these techniques, you can achieve designs that are not only efficient and reliable but also compliant with stringent EMI/EMC regulations. For advanced EMI challenges, our FAE team can provide expert analysis and guidance.</p>
+        </div>
+
+        <div class="author-info">
+            <h3>About the Author</h3>
+            <p><strong>[FAE Name]</strong> is a Senior Field Application Engineer at LiTong Group with over 10 years of experience in power electronics design. [He/She] specializes in high-efficiency AC-DC conversion and has extensive knowledge of Power Integrations' product portfolio. <a href="/support/authors/[fae-name]">View Author Profile</a></p>
+        </div>
+
+        <div class="related-articles">
+            <h2>Related Articles</h2>
+            <ul>
+                <li><a href="/support/guides/troubleshooting/output-voltage-instability">Resolving Output Voltage Instability in Flyback Converters</a></li>
+                <li><a href="/support/guides/pi-expert-tutorials/optimizing-efficiency">Optimizing Power Supply Efficiency using PI Expert</a></li>
+                <li><a href="/products/ac-dc/innoswitch">Explore InnoSwitch鈩?Series AC-DC Converters</a></li>
+            </ul>
+        </div>
+
+        <div class="cta-final">
+            <h2>Need further assistance with EMI reduction?</h2>
+            <p>Our expert FAE team is ready to provide in-depth technical support.</p>
+            <a href="/contact-us" class="btn-primary">Consult Technical Issues</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About LiTong Group</h3>
+                <p>Your trusted partner for Power Integrations products and solutions.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/solutions">Solutions</a></li>
+                    <li><a href="/support">Technical Support</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@elec-distributor.com</p>
+                <p>WhatsApp: +86 15013702378</p>
+                <p>WeChat: +86 18612518271</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 LiTong Group. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

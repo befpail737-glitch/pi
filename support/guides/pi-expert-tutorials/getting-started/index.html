@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started with PI Expert: A Step-by-Step Guide | LiTong Group</title>
+    <meta name="description" content="A comprehensive step-by-step tutorial on how to get started with Power Integrations' PI Expert design software. Learn to set up projects and generate preliminary power supply designs.">
+    <meta name="keywords" content="PI Expert tutorial, getting started, power supply design, design software, Power Integrations, LiTong Group">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <style>
+        /* Specific styles for Article Detail Page */
+        .article-content {
+            line-height: 1.8;
+            margin-top: 30px;
+        }
+        .article-content h2 {
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #0056b3;
+        }
+        .article-content h3 {
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        .article-content p {
+            margin-bottom: 15px;
+        }
+        .article-content ul, .article-content ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .author-info {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f0f8ff;
+            border-left: 5px solid #007bff;
+            border-radius: 0 8px 8px 0;
+        }
+        .author-info h3 {
+            margin-top: 0;
+            font-size: 20px;
+            color: #0056b3;
+        }
+        .author-info p {
+            margin-bottom: 5px;
+        }
+        .author-info a {
+            font-weight: bold;
+        }
+        .related-articles {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .related-articles h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #0056b3;
+        }
+        .related-articles ul {
+            list-style: none;
+            padding: 0;
+        }
+        .related-articles ul li {
+            margin-bottom: 10px;
+        }
+        .related-articles ul li a {
+            font-size: 16px;
+            color: #007bff;
+        }
+        .cta-final {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #e9f5ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta-final h2 {
+            font-size: 28px;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">LiTong Group</a>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/solutions">Solutions</a></li>
+                <li><a href="/support">Technical Support</a></li>
+                <li><a href="/news">News Center</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/support">Technical Support</a></li>
+                <li class="breadcrumb-item"><a href="/support/guides/pi-expert-tutorials">PI Expert Tutorials</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Getting Started with PI Expert</li>
+            </ol>
+        </nav>
+
+        <h1>Getting Started with PI Expert: A Step-by-Step Guide</h1>
+
+        <div class="article-content">
+            <p>Welcome to our comprehensive guide on getting started with Power Integrations' PI Expert design software. PI Expert is an invaluable tool that simplifies the design process for power supplies using Power Integrations' ICs, allowing engineers to quickly create optimized and robust designs. This tutorial will walk you through the initial setup, project creation, and basic design generation.</p>
+
+            <h2>1. Installation and Setup</h2>
+            <p>Before you begin, ensure you have the latest version of PI Expert installed on your system. You can download it from the official Power Integrations website. Follow the on-screen instructions for installation. Once installed, launch the application.</p>
+            <img src="../../../../images/support/pi-expert-install.png" alt="PI Expert Installation Screenshot">
+            <p><em>Figure 1: PI Expert installation wizard.</em></p>
+
+            <h2>2. Creating a New Project</h2>
+            <h3>Step 2.1: Launch PI Expert and Select 'New Design'</h3>
+            <p>Upon launching, you will typically see an option to create a 'New Design' or open an existing one. Select 'New Design' to start a fresh project.</p>
+            <img src="../../../../images/support/pi-expert-new-design.png" alt="PI Expert New Design Option">
+            <p><em>Figure 2: Starting a new design in PI Expert.</em></p>
+
+            <h3>Step 2.2: Define Input Specifications</h3>
+            <p>The first step in any power supply design is to define your input parameters. This includes:</p>
+            <ul>
+                <li>**Input Voltage Range:** Specify the minimum and maximum AC input voltage (e.g., 85 VAC to 265 VAC for universal input).</li>
+                <li>**Input Frequency:** Typically 50 Hz or 60 Hz.</li>
+                <li>**Output Power:** The total power required by your load.</li>
+            </ul>
+            <p>Enter these values accurately as they form the foundation of your design.</p>
+
+            <h2>3. Defining Output Specifications</h2>
+            <p>Next, you will define the output characteristics of your power supply:</p>
+            <ul>
+                <li>**Output Voltage:** The desired DC output voltage (e.g., 5V, 12V, 24V).</li>
+                <li>**Output Current:** The maximum current the output needs to supply.</li>
+                <li>**Number of Outputs:** If your design requires multiple outputs, specify them here.</li>
+            </ul>
+            <p>PI Expert will use these parameters to suggest suitable Power Integrations ICs.</p>
+
+            <h2>4. Selecting a Power Integrations IC</h2>
+            <p>Based on your input and output specifications, PI Expert will recommend a list of compatible Power Integrations ICs (e.g., InnoSwitch, LinkSwitch, TOPSwitch). You can review the suggested ICs, their key features, and efficiency ratings. Select the IC that best fits your design goals and constraints.</p>
+            <img src="../../../../images/support/pi-expert-ic-selection.png" alt="PI Expert IC Selection Interface">
+            <p><em>Figure 3: Selecting a Power Integrations IC in PI Expert.</em></p>
+
+            <h2>5. Generating the Design</h2>
+            <p>Once you have selected an IC, PI Expert will automatically generate a complete power supply design, including:</p>
+            <ul>
+                <li>**Schematic Diagram:** A detailed circuit diagram.</li>
+                <li>**Bill of Materials (BOM):** A list of all required components.</li>
+                <li>**Transformer Design:** Detailed specifications for the custom transformer.</li>
+                <li>**Performance Analysis:** Predicted efficiency, thermal performance, and other key metrics.</li>
+            </ul>
+            <p>You can then review, modify, and optimize this design within the software. This initial design provides a strong starting point for your development.</p>
+
+            <h2>Conclusion</h2>
+            <p>Getting started with PI Expert is straightforward, and its intuitive interface allows engineers to quickly move from concept to a functional power supply design. By following these steps, you can leverage the power of PI Expert to accelerate your development process and create high-performance, reliable power solutions. For more advanced topics, refer to our other PI Expert tutorials or contact our FAE team for personalized support.</p>
+        </div>
+
+        <div class="author-info">
+            <h3>About the Author</h3>
+            <p><strong>[FAE Name]</strong> is a Senior Field Application Engineer at LiTong Group with over 10 years of experience in power electronics design. [He/She] specializes in high-efficiency AC-DC conversion and has extensive knowledge of Power Integrations' product portfolio. <a href="/support/authors/[fae-name]">View Author Profile</a></p>
+        </div>
+
+        <div class="related-articles">
+            <h2>Related Articles</h2>
+            <ul>
+                <li><a href="/support/guides/pi-expert-tutorials/optimizing-efficiency">Optimizing Power Supply Efficiency using PI Expert</a></li>
+                <li><a href="/products/ac-dc/innoswitch">Explore InnoSwitch鈩?Series AC-DC Converters</a></li>
+                <li><a href="/solutions/usb-pd-gan-fast-charger">100W USB-PD GaN Fast Charger Solution</a></li>
+            </ul>
+        </div>
+
+        <div class="cta-final">
+            <h2>Need further assistance with your PI Expert design?</h2>
+            <p>Our expert FAE team is ready to provide in-depth technical support.</p>
+            <a href="/contact-us" class="btn-primary">Consult Technical Issues</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About LiTong Group</h3>
+                <p>Your trusted partner for Power Integrations products and solutions.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/solutions">Solutions</a></li>
+                    <li><a href="/support">Technical Support</a></li>
+                    <li><a href="/contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@elec-distributor.com</p>
+                <p>WhatsApp: +86 15013702378</p>
+                <p>WeChat: +86 18612518271</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 LiTong Group. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pi.elec-distributor.com/sitemap.xml
+
+# Disallow crawling of potential admin or config files
+Disallow: /_redirects
+Disallow: /.git/
