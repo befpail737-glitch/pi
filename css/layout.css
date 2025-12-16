@@ -34,16 +34,24 @@ body {
 /* 桌面端布局 - 最大宽度1200px，居中显示 */
 @media screen and (min-width: 1200px) {
   .container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
   }
-  
+
   body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
+    min-height: 100vh;
   }
-  
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   main, footer {
     width: 100%;
     max-width: var(--container-max-width);
